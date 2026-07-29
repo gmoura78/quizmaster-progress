@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "name": "QuizMaster",
+    "subtitle": "Dealership training game",
+    "status": "MVP development",
+    "capacity": "Up to 25 players",
+    "deployment": "Local Wi-Fi"
+  },
+  "currentTask": {
+    "sprintId": "sprint-3",
+    "taskId": "s3-t6",
+    "label": "Sprint 3 · Task 6",
+    "title": "Implement Server Timer",
+    "summary": "Verify the server-authoritative start time, deadline, and duration before answer submission begins."
+  },
+  "nextMilestone": {
+    "title": "One complete question",
+    "summary": "Accept one answer, enforce the deadline, reveal the result, and enter question review."
+  },
+  "highlights": [
+    "Physical-phone QR-code and local-Wi-Fi testing passed",
+    "Phones act as live answer controllers",
+    "The controller opens immediately after joining",
+    "Player reconnect works"
+  ],
+  "sprints": [
+    {
+      "id": "sprint-1",
+      "number": 1,
+      "title": "Foundation and Environment",
+      "goal": "Local server and project structure running",
+      "status": "done",
+      "tasks": [
+        {
+          "id": "s1-t1",
+          "number": 1,
+          "title": "Confirm Installed Tools",
+          "status": "done"
+        },
+        {
+          "id": "s1-t2",
+          "number": 2,
+          "title": "Create Project Folder",
+          "status": "done"
+        },
+        {
+          "id": "s1-t3",
+          "number": 3,
+          "title": "Initialize Node Project",
+          "status": "done"
+        },
+        {
+          "id": "s1-t4",
+          "number": 4,
+          "title": "Initialize Git",
+          "status": "done"
+        },
+        {
+          "id": "s1-t5",
+          "number": 5,
+          "title": "Install Core Dependencies",
+          "status": "done"
+        },
+        {
+          "id": "s1-t6",
+          "number": 6,
+          "title": "Create TypeScript Configuration",
+          "status": "done"
+        },
+        {
+          "id": "s1-t7",
+          "number": 7,
+          "title": "Create Folder Structure",
+          "status": "done"
+        },
+        {
+          "id": "s1-t8",
+          "number": 8,
+          "title": "Create First Server",
+          "status": "done"
+        },
+        {
+          "id": "s1-t9",
+          "number": 9,
+          "title": "Add Development Scripts",
+          "status": "done"
+        },
+        {
+          "id": "s1-t10",
+          "number": 10,
+          "title": "Create Environment File",
+          "status": "done"
+        },
+        {
+          "id": "s1-t11",
+          "number": 11,
+          "title": "Create .gitignore",
+          "status": "done"
+        },
+        {
+          "id": "s1-t12",
+          "number": 12,
+          "title": "First Commit",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": "sprint-2",
+      "number": 2,
+      "title": "Player Join and Lobby",
+      "goal": "Host and phones connected in a waiting room",
+      "status": "done",
+      "tasks": [
+        {
+          "id": "s2-t1",
+          "number": 1,
+          "title": "Create Host Login Screen",
+          "status": "done"
+        },
+        {
+          "id": "s2-t2",
+          "number": 2,
+          "title": "Create Host Home Screen",
+          "status": "done"
+        },
+        {
+          "id": "s2-t3",
+          "number": 3,
+          "title": "Generate Game Code",
+          "status": "done"
+        },
+        {
+          "id": "s2-t4",
+          "number": 4,
+          "title": "Generate Join QR Code",
+          "status": "done"
+        },
+        {
+          "id": "s2-t5",
+          "number": 5,
+          "title": "Create Player Join Page",
+          "status": "done"
+        },
+        {
+          "id": "s2-t6",
+          "number": 6,
+          "title": "Add Name Validation",
+          "status": "done"
+        },
+        {
+          "id": "s2-t7",
+          "number": 7,
+          "title": "Add Socket.IO",
+          "status": "done"
+        },
+        {
+          "id": "s2-t8",
+          "number": 8,
+          "title": "Create Host Lobby",
+          "status": "done"
+        },
+        {
+          "id": "s2-t9",
+          "number": 9,
+          "title": "Create Player Waiting Room",
+          "status": "done"
+        },
+        {
+          "id": "s2-t10",
+          "number": 10,
+          "title": "Test Phone Connection",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": "sprint-3",
+      "number": 3,
+      "title": "Live Question Flow",
+      "goal": "One full question works end to end",
+      "status": "in-progress",
+      "tasks": [
+        {
+          "id": "s3-t1",
+          "number": 1,
+          "title": "Create Temporary Question Data",
+          "status": "done"
+        },
+        {
+          "id": "s3-t2",
+          "number": 2,
+          "title": "Add Game State Machine",
+          "status": "done"
+        },
+        {
+          "id": "s3-t3",
+          "number": 3,
+          "title": "Start Game Event",
+          "status": "done"
+        },
+        {
+          "id": "s3-t4",
+          "number": 4,
+          "title": "Create Host Question Screen",
+          "status": "done"
+        },
+        {
+          "id": "s3-t5",
+          "number": 5,
+          "title": "Create Player Question Screen",
+          "status": "done"
+        },
+        {
+          "id": "s3-t6",
+          "number": 6,
+          "title": "Implement Server Timer",
+          "status": "current"
+        },
+        {
+          "id": "s3-t7",
+          "number": 7,
+          "title": "Implement Answer Submission",
+          "status": "not-started"
+        },
+        {
+          "id": "s3-t8",
+          "number": 8,
+          "title": "Lock Answer Buttons",
+          "status": "not-started"
+        },
+        {
+          "id": "s3-t9",
+          "number": 9,
+          "title": "Show Host Response Count",
+          "status": "not-started"
+        },
+        {
+          "id": "s3-t10",
+          "number": 10,
+          "title": "Reveal Correct Answer",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "sprint-4",
+      "number": 4,
+      "title": "Scoring and Personal Feedback",
+      "goal": "Correctness, speed points, and personal results work",
+      "status": "not-started",
+      "tasks": [
+        {
+          "id": "s4-t1",
+          "number": 1,
+          "title": "Create Scoring Module",
+          "status": "not-started"
+        },
+        {
+          "id": "s4-t2",
+          "number": 2,
+          "title": "Add Response-Time Calculation",
+          "status": "not-started"
+        },
+        {
+          "id": "s4-t3",
+          "number": 3,
+          "title": "Calculate Speed Bonus",
+          "status": "not-started"
+        },
+        {
+          "id": "s4-t4",
+          "number": 4,
+          "title": "Add Player Result Screen",
+          "status": "not-started"
+        },
+        {
+          "id": "s4-t5",
+          "number": 5,
+          "title": "Add Host Statistics",
+          "status": "not-started"
+        },
+        {
+          "id": "s4-t6",
+          "number": 6,
+          "title": "Protect Score Calculation",
+          "status": "not-started"
+        },
+        {
+          "id": "s4-t7",
+          "number": 7,
+          "title": "Prepare Tie-Breaking Data",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "sprint-5",
+      "number": 5,
+      "title": "Full Game and Final Leaderboard",
+      "goal": "Ten-question game completes with final ranking",
+      "status": "not-started",
+      "tasks": [
+        {
+          "id": "s5-t1",
+          "number": 1,
+          "title": "Load Ten Temporary Questions",
+          "status": "not-started"
+        },
+        {
+          "id": "s5-t2",
+          "number": 2,
+          "title": "Implement Manual Progression",
+          "status": "not-started"
+        },
+        {
+          "id": "s5-t3",
+          "number": 3,
+          "title": "Track Current Question",
+          "status": "not-started"
+        },
+        {
+          "id": "s5-t4",
+          "number": 4,
+          "title": "Complete Game",
+          "status": "not-started"
+        },
+        {
+          "id": "s5-t5",
+          "number": 5,
+          "title": "Build Final Host Leaderboard",
+          "status": "not-started"
+        },
+        {
+          "id": "s5-t6",
+          "number": 6,
+          "title": "Build Player Final Screen",
+          "status": "not-started"
+        },
+        {
+          "id": "s5-t7",
+          "number": 7,
+          "title": "Add End Game Confirmation",
+          "status": "not-started"
+        },
+        {
+          "id": "s5-t8",
+          "number": 8,
+          "title": "Test Ties",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "sprint-6",
+      "number": 6,
+      "title": "SQLite Database and CSV Import",
+      "goal": "Questions and results persist in SQLite",
+      "status": "not-started",
+      "tasks": [
+        {
+          "id": "s6-t1",
+          "number": 1,
+          "title": "Initialize SQLite",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t2",
+          "number": 2,
+          "title": "Apply Database Migrations",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t3",
+          "number": 3,
+          "title": "Seed Default Data",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t4",
+          "number": 4,
+          "title": "Create CSV Template",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t5",
+          "number": 5,
+          "title": "Create CSV Validator",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t6",
+          "number": 6,
+          "title": "Create Import Process",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t7",
+          "number": 7,
+          "title": "Add Category Selection",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t8",
+          "number": 8,
+          "title": "Randomly Select Questions",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t9",
+          "number": 9,
+          "title": "Save Game Data",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t10",
+          "number": 10,
+          "title": "Verify Persistence",
+          "status": "not-started"
+        },
+        {
+          "id": "s6-t11",
+          "number": 11,
+          "title": "Create Backup Before Import",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "sprint-7",
+      "number": 7,
+      "title": "Testing, Polish, and Rehearsal",
+      "goal": "MVP packaged and ready for live use",
+      "status": "not-started",
+      "tasks": [
+        {
+          "id": "s7-t1",
+          "number": 1,
+          "title": "Test the Exact Dealership Network",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t2",
+          "number": 2,
+          "title": "Test Multiple Devices",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t3",
+          "number": 3,
+          "title": "Run Load Test",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t4",
+          "number": 4,
+          "title": "Test Reconnection",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t5",
+          "number": 5,
+          "title": "Test Full Game Repeatedly",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t6",
+          "number": 6,
+          "title": "Improve Mobile Layout",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t7",
+          "number": 7,
+          "title": "Improve Host Layout",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t8",
+          "number": 8,
+          "title": "Create Simple Startup Script",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t9",
+          "number": 9,
+          "title": "Create Emergency Recovery Notes",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t10",
+          "number": 10,
+          "title": "Create Release Backup",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t11",
+          "number": 11,
+          "title": "Assign Version",
+          "status": "not-started"
+        },
+        {
+          "id": "s7-t12",
+          "number": 12,
+          "title": "Rehearse Host Script",
+          "status": "not-started"
+        }
+      ]
+    }
+  ],
+  "build": {
+    "testStatus": "passed",
+    "testCount": 103,
+    "commitSha": "70627c3",
+    "updatedAt": "2026-07-29T20:59:44Z"
+  }
+}

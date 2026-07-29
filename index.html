@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="QuizMaster MVP development progress"
+    >
+    <meta name="robots" content="noindex, nofollow">
+    <title>QuizMaster · Development Progress</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="QuizMaster progress home">
+        <span class="brand-mark" aria-hidden="true">Q</span>
+        <span>
+          <strong>QuizMaster</strong>
+          <small>Development progress</small>
+        </span>
+      </a>
+
+      <div class="live-badge">
+        <span aria-hidden="true"></span>
+        Updated from main
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">MVP build tracker</p>
+          <h1 id="hero-title">
+            Building the fastest way to train a dealership team.
+          </h1>
+          <p class="hero-lede">
+            A live view of approved QuizMaster milestones, from local
+            multiplayer foundations to launch readiness.
+          </p>
+
+          <div class="hero-tags" id="project-tags" aria-label="Project details"></div>
+        </div>
+
+        <aside class="progress-card" aria-labelledby="overall-progress-title">
+          <p class="card-kicker" id="overall-progress-title">Overall completion</p>
+          <div class="progress-ring" id="progress-ring">
+            <div>
+              <strong id="completion-percentage">—</strong>
+              <span>complete</span>
+            </div>
+          </div>
+          <p class="progress-caption" id="completion-caption">Loading progress…</p>
+          <div class="progress-track" aria-hidden="true">
+            <span id="overall-progress-bar"></span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="status-grid" aria-label="Current development status">
+        <article class="spotlight-card spotlight-card--current">
+          <div class="spotlight-icon" aria-hidden="true">→</div>
+          <div>
+            <p class="card-kicker">Current checkpoint</p>
+            <p class="spotlight-label" id="current-task-label">—</p>
+            <h2 id="current-task-title">Loading…</h2>
+            <p id="current-task-summary"></p>
+          </div>
+        </article>
+
+        <article class="spotlight-card">
+          <div class="spotlight-icon" aria-hidden="true">◆</div>
+          <div>
+            <p class="card-kicker">Next milestone</p>
+            <h2 id="next-milestone-title">Loading…</h2>
+            <p id="next-milestone-summary"></p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block" aria-labelledby="sprints-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Roadmap</p>
+            <h2 id="sprints-title">Seven sprints to MVP</h2>
+          </div>
+          <div class="legend" aria-label="Task status legend">
+            <span><i class="legend-dot legend-dot--done"></i>Done</span>
+            <span><i class="legend-dot legend-dot--current"></i>Current</span>
+            <span><i class="legend-dot"></i>Planned</span>
+          </div>
+        </div>
+        <div class="sprint-list" id="sprint-list"></div>
+      </section>
+
+      <section class="lower-grid">
+        <article class="section-card" aria-labelledby="wins-title">
+          <p class="eyebrow">Working now</p>
+          <h2 id="wins-title">Verified capabilities</h2>
+          <ul class="check-list" id="highlights-list"></ul>
+        </article>
+
+        <article class="section-card build-card" aria-labelledby="build-title">
+          <p class="eyebrow">Automated checks</p>
+          <h2 id="build-title">Latest build</h2>
+          <dl class="build-facts">
+            <div>
+              <dt>Status</dt>
+              <dd id="test-status">Waiting for workflow</dd>
+            </div>
+            <div>
+              <dt>Tests</dt>
+              <dd id="test-count">—</dd>
+            </div>
+            <div>
+              <dt>Commit</dt>
+              <dd id="commit-sha">—</dd>
+            </div>
+            <div>
+              <dt>Updated</dt>
+              <dd id="updated-at">—</dd>
+            </div>
+          </dl>
+          <p class="privacy-note">
+            Only sanitized progress and check metadata are published.
+            Application source and documentation remain private.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>QuizMaster MVP</span>
+      <span>Private source · Public progress</span>
+    </footer>
+  </body>
+</html>
