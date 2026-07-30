@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-4",
-    "taskId": "s4-t3",
-    "label": "Sprint 4 · Task 3",
-    "title": "Calculate Speed Bonus",
+    "taskId": "s4-t4",
+    "label": "Sprint 4 · Task 4",
+    "title": "Add Player Result Screen",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -267,13 +267,13 @@
           "id": "s4-t3",
           "number": 3,
           "title": "Calculate Speed Bonus",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s4-t4",
           "number": 4,
           "title": "Add Player Result Screen",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s4-t5",
@@ -511,8 +511,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 135,
-    "commitSha": "788de2a",
-    "updatedAt": "2026-07-30T17:05:18Z"
+    "testCount": 141,
+    "commitSha": "58fc5b1",
+    "updatedAt": "2026-07-30T17:14:53Z"
   }
 }
