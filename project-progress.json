@@ -22,7 +22,7 @@
     "Final rankings emitted only after game completion",
     "Host final leaderboard highlights the top three",
     "Player final screen shows personal and complete results",
-    "Manual host next-question flow accepted on phone"
+    "Permanent player accounts and report-ready history approved"
   ],
   "sprints": [
     {
@@ -355,74 +355,74 @@
     {
       "id": "sprint-6",
       "number": 6,
-      "title": "SQLite Database and CSV Import",
-      "goal": "Questions and results persist in SQLite",
+      "title": "Permanent Player Accounts and Profiles",
+      "goal": "Players register, recover access, and join with permanent identities",
       "status": "not-started",
       "tasks": [
         {
           "id": "s6-t1",
           "number": 1,
-          "title": "Initialize SQLite",
+          "title": "Initialize SQLite and Migrations",
           "status": "not-started"
         },
         {
           "id": "s6-t2",
           "number": 2,
-          "title": "Apply Database Migrations",
+          "title": "Create Account Schema",
           "status": "not-started"
         },
         {
           "id": "s6-t3",
           "number": 3,
-          "title": "Seed Default Data",
+          "title": "Build Player Registration",
           "status": "not-started"
         },
         {
           "id": "s6-t4",
           "number": 4,
-          "title": "Create CSV Template",
+          "title": "Build Player Authentication",
           "status": "not-started"
         },
         {
           "id": "s6-t5",
           "number": 5,
-          "title": "Create CSV Validator",
+          "title": "Add Self-Service Password Reset",
           "status": "not-started"
         },
         {
           "id": "s6-t6",
           "number": 6,
-          "title": "Create Import Process",
+          "title": "Add Username Editing",
           "status": "not-started"
         },
         {
           "id": "s6-t7",
           "number": 7,
-          "title": "Add Category Selection",
+          "title": "Add Predefined Avatars",
           "status": "not-started"
         },
         {
           "id": "s6-t8",
           "number": 8,
-          "title": "Randomly Select Questions",
+          "title": "Add Personal Avatar Upload",
           "status": "not-started"
         },
         {
           "id": "s6-t9",
           "number": 9,
-          "title": "Save Game Data",
+          "title": "Require Authenticated Game Join",
           "status": "not-started"
         },
         {
           "id": "s6-t10",
           "number": 10,
-          "title": "Verify Persistence",
+          "title": "Bind Reconnect to Accounts",
           "status": "not-started"
         },
         {
           "id": "s6-t11",
           "number": 11,
-          "title": "Create Backup Before Import",
+          "title": "Test Account and Profile Security",
           "status": "not-started"
         }
       ]
@@ -430,80 +430,155 @@
     {
       "id": "sprint-7",
       "number": 7,
-      "title": "Testing, Polish, and Rehearsal",
-      "goal": "MVP packaged and ready for live use",
+      "title": "Game Persistence and CSV Import",
+      "goal": "Complete account-linked game history persists in SQLite",
       "status": "not-started",
       "tasks": [
         {
           "id": "s7-t1",
           "number": 1,
-          "title": "Test the Exact Dealership Network",
+          "title": "Extend Game Data Migrations",
           "status": "not-started"
         },
         {
           "id": "s7-t2",
           "number": 2,
-          "title": "Test Multiple Devices",
+          "title": "Seed Default Data",
           "status": "not-started"
         },
         {
           "id": "s7-t3",
           "number": 3,
-          "title": "Run Load Test",
+          "title": "Create CSV Template",
           "status": "not-started"
         },
         {
           "id": "s7-t4",
           "number": 4,
-          "title": "Test Reconnection",
+          "title": "Create CSV Validator",
           "status": "not-started"
         },
         {
           "id": "s7-t5",
           "number": 5,
-          "title": "Test Full Game Repeatedly",
+          "title": "Create Import Process",
           "status": "not-started"
         },
         {
           "id": "s7-t6",
           "number": 6,
-          "title": "Improve Mobile Layout",
+          "title": "Add Category Selection",
           "status": "not-started"
         },
         {
           "id": "s7-t7",
           "number": 7,
-          "title": "Improve Host Layout",
+          "title": "Randomly Select Questions",
           "status": "not-started"
         },
         {
           "id": "s7-t8",
           "number": 8,
-          "title": "Create Simple Startup Script",
+          "title": "Save Complete Game History",
           "status": "not-started"
         },
         {
           "id": "s7-t9",
           "number": 9,
-          "title": "Create Emergency Recovery Notes",
+          "title": "Add Report-Ready History Queries",
           "status": "not-started"
         },
         {
           "id": "s7-t10",
           "number": 10,
-          "title": "Create Release Backup",
+          "title": "Verify Account-Linked Persistence",
           "status": "not-started"
         },
         {
           "id": "s7-t11",
           "number": 11,
+          "title": "Create Database and Avatar Backups",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "sprint-8",
+      "number": 8,
+      "title": "Testing, Polish, and Rehearsal",
+      "goal": "MVP packaged and ready for live use",
+      "status": "not-started",
+      "tasks": [
+        {
+          "id": "s8-t1",
+          "number": 1,
+          "title": "Test Network and Reset Email",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t2",
+          "number": 2,
+          "title": "Test Multiple Devices",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t3",
+          "number": 3,
+          "title": "Run Load Test",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t4",
+          "number": 4,
+          "title": "Test Account Reconnection",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t5",
+          "number": 5,
+          "title": "Test Full Game Repeatedly",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t6",
+          "number": 6,
+          "title": "Improve Mobile Layout",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t7",
+          "number": 7,
+          "title": "Improve Host Layout",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t8",
+          "number": 8,
+          "title": "Create Simple Startup Script",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t9",
+          "number": 9,
+          "title": "Create Recovery and Email-Outage Notes",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t10",
+          "number": 10,
+          "title": "Create Full Release Backup",
+          "status": "not-started"
+        },
+        {
+          "id": "s8-t11",
+          "number": 11,
           "title": "Assign Version",
           "status": "not-started"
         },
         {
-          "id": "s7-t12",
+          "id": "s8-t12",
           "number": 12,
-          "title": "Rehearse Host Script",
+          "title": "Rehearse Host and Player Flows",
           "status": "not-started"
         }
       ]
@@ -512,7 +587,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 163,
-    "commitSha": "c38c246",
-    "updatedAt": "2026-07-30T21:15:33Z"
+    "commitSha": "443653d",
+    "updatedAt": "2026-07-30T21:54:28Z"
   }
 }
