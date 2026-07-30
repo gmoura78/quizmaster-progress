@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-5",
-    "taskId": "s5-t1",
-    "label": "Sprint 5 · Task 1",
-    "title": "Load Ten Temporary Questions",
+    "taskId": "s5-t2",
+    "label": "Sprint 5 · Task 2",
+    "title": "Implement Manual Progression",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -22,7 +22,7 @@
     "Sprint 4 scoring and personal feedback complete",
     "Player tie-breaking aggregates tracked server-side",
     "Host question statistics accepted on laptop and phone",
-    "Browser submissions restricted to selection data"
+    "Ten ordered temporary questions validated"
   ],
   "sprints": [
     {
@@ -306,13 +306,13 @@
           "id": "s5-t1",
           "number": 1,
           "title": "Load Ten Temporary Questions",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s5-t2",
           "number": 2,
           "title": "Implement Manual Progression",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s5-t3",
@@ -512,7 +512,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 150,
-    "commitSha": "371a2b9",
-    "updatedAt": "2026-07-30T19:33:24Z"
+    "commitSha": "b7427a1",
+    "updatedAt": "2026-07-30T19:43:33Z"
   }
 }
