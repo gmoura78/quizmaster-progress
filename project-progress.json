@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-4",
-    "taskId": "s4-t6",
-    "label": "Sprint 4 · Task 6",
-    "title": "Protect Score Calculation",
+    "taskId": "s4-t7",
+    "label": "Sprint 4 · Task 7",
+    "title": "Prepare Tie-Breaking Data",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -21,8 +21,8 @@
   "highlights": [
     "Versioned 0/50/100/150 scoring rule verified",
     "Server scoring updates each player's running total",
-    "Private phone result and reconnect flow verified",
-    "Host question statistics accepted on laptop and phone"
+    "Host question statistics accepted on laptop and phone",
+    "Browser submissions restricted to selection data"
   ],
   "sprints": [
     {
@@ -285,13 +285,13 @@
           "id": "s4-t6",
           "number": 6,
           "title": "Protect Score Calculation",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s4-t7",
           "number": 7,
           "title": "Prepare Tie-Breaking Data",
-          "status": "not-started"
+          "status": "current"
         }
       ]
     },
@@ -511,8 +511,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 144,
-    "commitSha": "71254b6",
-    "updatedAt": "2026-07-30T18:55:12Z"
+    "testCount": 146,
+    "commitSha": "9aa8892",
+    "updatedAt": "2026-07-30T19:20:46Z"
   }
 }
