@@ -8,21 +8,21 @@
     "deployment": "Local Wi-Fi"
   },
   "currentTask": {
-    "sprintId": "sprint-3",
-    "taskId": "s3-t9",
-    "label": "Sprint 3 · Task 9",
-    "title": "Show Host Response Count",
-    "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
+    "sprintId": "sprint-4",
+    "taskId": "s4-t1",
+    "label": "Sprint 4 · Task 1",
+    "title": "Create Scoring Module",
+    "summary": "Sprint 3 is complete. Await project-owner approval before beginning scoring or private feedback."
   },
   "nextMilestone": {
-    "title": "One complete question",
-    "summary": "Accept one answer, enforce the deadline, reveal the result, and enter question review."
+    "title": "Correctness, speed points, and personal results work",
+    "summary": "Sprint 4 is queued but has not started."
   },
   "highlights": [
+    "Sprint 3 end-to-end question flow accepted",
     "Physical-phone QR-code and local-Wi-Fi testing passed",
-    "Phones act as live answer controllers",
-    "The controller opens immediately after joining",
-    "Player reconnect works"
+    "Manual answer reveal enters private-safe review",
+    "Scoring and private feedback have not started"
   ],
   "sprints": [
     {
@@ -180,7 +180,7 @@
       "number": 3,
       "title": "Live Question Flow",
       "goal": "One full question works end to end",
-      "status": "in-progress",
+      "status": "done",
       "tasks": [
         {
           "id": "s3-t1",
@@ -234,13 +234,13 @@
           "id": "s3-t9",
           "number": 9,
           "title": "Show Host Response Count",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s3-t10",
           "number": 10,
           "title": "Reveal Correct Answer",
-          "status": "not-started"
+          "status": "done"
         }
       ]
     },
@@ -255,7 +255,7 @@
           "id": "s4-t1",
           "number": 1,
           "title": "Create Scoring Module",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s4-t2",
@@ -512,7 +512,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 125,
-    "commitSha": "a4aa710",
-    "updatedAt": "2026-07-30T14:07:48Z"
+    "commitSha": "55af64c",
+    "updatedAt": "2026-07-30T16:45:33Z"
   }
 }
