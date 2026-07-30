@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-5",
-    "taskId": "s5-t3",
-    "label": "Sprint 5 · Task 3",
-    "title": "Track Current Question",
+    "taskId": "s5-t4",
+    "label": "Sprint 5 · Task 4",
+    "title": "Complete Game",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -20,7 +20,7 @@
   },
   "highlights": [
     "Sprint 4 scoring and personal feedback complete",
-    "Player tie-breaking aggregates tracked server-side",
+    "Per-game question order and progress tracked server-side",
     "Ten ordered temporary questions validated",
     "Manual host next-question flow accepted on phone"
   ],
@@ -318,13 +318,13 @@
           "id": "s5-t3",
           "number": 3,
           "title": "Track Current Question",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s5-t4",
           "number": 4,
           "title": "Complete Game",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s5-t5",
@@ -511,8 +511,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 153,
-    "commitSha": "30566ee",
-    "updatedAt": "2026-07-30T20:15:56Z"
+    "testCount": 154,
+    "commitSha": "1e00c68",
+    "updatedAt": "2026-07-30T20:27:18Z"
   }
 }
