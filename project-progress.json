@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-4",
-    "taskId": "s4-t4",
-    "label": "Sprint 4 · Task 4",
-    "title": "Add Player Result Screen",
+    "taskId": "s4-t5",
+    "label": "Sprint 4 · Task 5",
+    "title": "Add Host Statistics",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -21,8 +21,8 @@
   "highlights": [
     "Sprint 3 end-to-end question flow accepted",
     "Versioned 0/50/100/150 scoring rule verified",
-    "Server response time is stored in exact milliseconds",
-    "Private feedback has not started"
+    "Server scoring updates each player's running total",
+    "Private phone result and reconnect flow verified"
   ],
   "sprints": [
     {
@@ -273,13 +273,13 @@
           "id": "s4-t4",
           "number": 4,
           "title": "Add Player Result Screen",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s4-t5",
           "number": 5,
           "title": "Add Host Statistics",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s4-t6",
@@ -512,7 +512,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 141,
-    "commitSha": "58fc5b1",
-    "updatedAt": "2026-07-30T17:14:53Z"
+    "commitSha": "6319075",
+    "updatedAt": "2026-07-30T17:54:00Z"
   }
 }
