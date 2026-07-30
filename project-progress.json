@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-6",
-    "taskId": "s6-t2",
-    "label": "Sprint 6 · Task 2",
-    "title": "Create Account Schema",
+    "taskId": "s6-t4",
+    "label": "Sprint 6 · Task 4",
+    "title": "Build Player Authentication",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -19,7 +19,7 @@
     "summary": "Complete Sprint 6: Permanent Player Accounts and Profiles."
   },
   "highlights": [
-    "SQLite startup enforces foreign keys, WAL, and safe migrations",
+    "First-time players can create permanent secured accounts",
     "Host final leaderboard highlights the top three",
     "Player final screen shows personal and complete results",
     "Permanent player accounts and report-ready history approved"
@@ -369,19 +369,19 @@
           "id": "s6-t2",
           "number": 2,
           "title": "Create Account Schema",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s6-t3",
           "number": 3,
           "title": "Build Player Registration",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s6-t4",
           "number": 4,
           "title": "Build Player Authentication",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s6-t5",
@@ -586,8 +586,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 178,
-    "commitSha": "46917e4",
-    "updatedAt": "2026-07-30T22:48:33Z"
+    "testCount": 188,
+    "commitSha": "3830071",
+    "updatedAt": "2026-07-30T23:55:18Z"
   }
 }
