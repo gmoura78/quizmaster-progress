@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-5",
-    "taskId": "s5-t4",
-    "label": "Sprint 5 · Task 4",
-    "title": "Complete Game",
+    "taskId": "s5-t5",
+    "label": "Sprint 5 · Task 5",
+    "title": "Build Final Host Leaderboard",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -19,7 +19,7 @@
     "summary": "Complete Sprint 5: Full Game and Final Leaderboard."
   },
   "highlights": [
-    "Sprint 4 scoring and personal feedback complete",
+    "Final rankings emitted only after game completion",
     "Per-game question order and progress tracked server-side",
     "Ten ordered temporary questions validated",
     "Manual host next-question flow accepted on phone"
@@ -324,13 +324,13 @@
           "id": "s5-t4",
           "number": 4,
           "title": "Complete Game",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s5-t5",
           "number": 5,
           "title": "Build Final Host Leaderboard",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s5-t6",
@@ -511,8 +511,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 154,
-    "commitSha": "1e00c68",
-    "updatedAt": "2026-07-30T20:27:18Z"
+    "testCount": 158,
+    "commitSha": "6fdc9fb",
+    "updatedAt": "2026-07-30T20:40:19Z"
   }
 }
