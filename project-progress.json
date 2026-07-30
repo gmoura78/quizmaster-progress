@@ -8,19 +8,19 @@
     "deployment": "Local Wi-Fi"
   },
   "currentTask": {
-    "sprintId": "sprint-4",
-    "taskId": "s4-t7",
-    "label": "Sprint 4 · Task 7",
-    "title": "Prepare Tie-Breaking Data",
+    "sprintId": "sprint-5",
+    "taskId": "s5-t1",
+    "label": "Sprint 5 · Task 1",
+    "title": "Load Ten Temporary Questions",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
-    "title": "Correctness, speed points, and personal results work",
-    "summary": "Complete Sprint 4: Scoring and Personal Feedback."
+    "title": "Ten-question game completes with final ranking",
+    "summary": "Complete Sprint 5: Full Game and Final Leaderboard."
   },
   "highlights": [
-    "Versioned 0/50/100/150 scoring rule verified",
-    "Server scoring updates each player's running total",
+    "Sprint 4 scoring and personal feedback complete",
+    "Player tie-breaking aggregates tracked server-side",
     "Host question statistics accepted on laptop and phone",
     "Browser submissions restricted to selection data"
   ],
@@ -249,7 +249,7 @@
       "number": 4,
       "title": "Scoring and Personal Feedback",
       "goal": "Correctness, speed points, and personal results work",
-      "status": "in-progress",
+      "status": "done",
       "tasks": [
         {
           "id": "s4-t1",
@@ -291,7 +291,7 @@
           "id": "s4-t7",
           "number": 7,
           "title": "Prepare Tie-Breaking Data",
-          "status": "current"
+          "status": "done"
         }
       ]
     },
@@ -300,13 +300,13 @@
       "number": 5,
       "title": "Full Game and Final Leaderboard",
       "goal": "Ten-question game completes with final ranking",
-      "status": "not-started",
+      "status": "in-progress",
       "tasks": [
         {
           "id": "s5-t1",
           "number": 1,
           "title": "Load Ten Temporary Questions",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s5-t2",
@@ -511,8 +511,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 146,
-    "commitSha": "9aa8892",
-    "updatedAt": "2026-07-30T19:20:46Z"
+    "testCount": 150,
+    "commitSha": "371a2b9",
+    "updatedAt": "2026-07-30T19:33:24Z"
   }
 }
