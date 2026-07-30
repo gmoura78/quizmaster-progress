@@ -9,20 +9,20 @@
   },
   "currentTask": {
     "sprintId": "sprint-4",
-    "taskId": "s4-t1",
-    "label": "Sprint 4 · Task 1",
-    "title": "Create Scoring Module",
-    "summary": "Sprint 3 is complete. Await project-owner approval before beginning scoring or private feedback."
+    "taskId": "s4-t3",
+    "label": "Sprint 4 · Task 3",
+    "title": "Calculate Speed Bonus",
+    "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
     "title": "Correctness, speed points, and personal results work",
-    "summary": "Sprint 4 is queued but has not started."
+    "summary": "Complete Sprint 4: Scoring and Personal Feedback."
   },
   "highlights": [
     "Sprint 3 end-to-end question flow accepted",
-    "Physical-phone QR-code and local-Wi-Fi testing passed",
-    "Manual answer reveal enters private-safe review",
-    "Scoring and private feedback have not started"
+    "Versioned 0/50/100/150 scoring rule verified",
+    "Server response time is stored in exact milliseconds",
+    "Private feedback has not started"
   ],
   "sprints": [
     {
@@ -249,25 +249,25 @@
       "number": 4,
       "title": "Scoring and Personal Feedback",
       "goal": "Correctness, speed points, and personal results work",
-      "status": "not-started",
+      "status": "in-progress",
       "tasks": [
         {
           "id": "s4-t1",
           "number": 1,
           "title": "Create Scoring Module",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s4-t2",
           "number": 2,
           "title": "Add Response-Time Calculation",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s4-t3",
           "number": 3,
           "title": "Calculate Speed Bonus",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s4-t4",
@@ -511,8 +511,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 131,
-    "commitSha": "cb5b68f",
-    "updatedAt": "2026-07-30T16:50:42Z"
+    "testCount": 135,
+    "commitSha": "788de2a",
+    "updatedAt": "2026-07-30T17:05:18Z"
   }
 }
