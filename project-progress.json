@@ -8,15 +8,15 @@
     "deployment": "Local Wi-Fi"
   },
   "currentTask": {
-    "sprintId": "sprint-5",
-    "taskId": "s5-t8",
-    "label": "Sprint 5 · Task 8",
-    "title": "Test Ties",
+    "sprintId": "sprint-6",
+    "taskId": "s6-t1",
+    "label": "Sprint 6 · Task 1",
+    "title": "Initialize SQLite and Migrations",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
-    "title": "Ten-question game completes with final ranking",
-    "summary": "Complete Sprint 5: Full Game and Final Leaderboard."
+    "title": "Players register, recover access, and join with permanent identities",
+    "summary": "Complete Sprint 6: Permanent Player Accounts and Profiles."
   },
   "highlights": [
     "Final rankings emitted only after game completion",
@@ -300,7 +300,7 @@
       "number": 5,
       "title": "Full Game and Final Leaderboard",
       "goal": "Ten-question game completes with final ranking",
-      "status": "in-progress",
+      "status": "done",
       "tasks": [
         {
           "id": "s5-t1",
@@ -348,7 +348,7 @@
           "id": "s5-t8",
           "number": 8,
           "title": "Test Ties",
-          "status": "current"
+          "status": "done"
         }
       ]
     },
@@ -357,13 +357,13 @@
       "number": 6,
       "title": "Permanent Player Accounts and Profiles",
       "goal": "Players register, recover access, and join with permanent identities",
-      "status": "not-started",
+      "status": "in-progress",
       "tasks": [
         {
           "id": "s6-t1",
           "number": 1,
           "title": "Initialize SQLite and Migrations",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s6-t2",
@@ -586,8 +586,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 169,
-    "commitSha": "e1f6cc3",
-    "updatedAt": "2026-07-30T22:20:22Z"
+    "testCount": 176,
+    "commitSha": "d4e9120",
+    "updatedAt": "2026-07-30T22:24:41Z"
   }
 }
