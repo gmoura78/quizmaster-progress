@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-5",
-    "taskId": "s5-t7",
-    "label": "Sprint 5 · Task 7",
-    "title": "Add End Game Confirmation",
+    "taskId": "s5-t8",
+    "label": "Sprint 5 · Task 8",
+    "title": "Test Ties",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -342,13 +342,13 @@
           "id": "s5-t7",
           "number": 7,
           "title": "Add End Game Confirmation",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s5-t8",
           "number": 8,
           "title": "Test Ties",
-          "status": "not-started"
+          "status": "current"
         }
       ]
     },
@@ -586,8 +586,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 163,
-    "commitSha": "443653d",
-    "updatedAt": "2026-07-30T21:54:28Z"
+    "testCount": 169,
+    "commitSha": "e1f6cc3",
+    "updatedAt": "2026-07-30T22:20:22Z"
   }
 }
