@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-4",
-    "taskId": "s4-t5",
-    "label": "Sprint 4 · Task 5",
-    "title": "Add Host Statistics",
+    "taskId": "s4-t6",
+    "label": "Sprint 4 · Task 6",
+    "title": "Protect Score Calculation",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -19,10 +19,10 @@
     "summary": "Complete Sprint 4: Scoring and Personal Feedback."
   },
   "highlights": [
-    "Sprint 3 end-to-end question flow accepted",
     "Versioned 0/50/100/150 scoring rule verified",
     "Server scoring updates each player's running total",
-    "Private phone result and reconnect flow verified"
+    "Private phone result and reconnect flow verified",
+    "Host question statistics accepted on laptop and phone"
   ],
   "sprints": [
     {
@@ -279,13 +279,13 @@
           "id": "s4-t5",
           "number": 5,
           "title": "Add Host Statistics",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s4-t6",
           "number": 6,
           "title": "Protect Score Calculation",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s4-t7",
@@ -511,8 +511,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 141,
-    "commitSha": "6319075",
-    "updatedAt": "2026-07-30T17:54:00Z"
+    "testCount": 144,
+    "commitSha": "71254b6",
+    "updatedAt": "2026-07-30T18:55:12Z"
   }
 }
