@@ -9,10 +9,10 @@
   },
   "currentTask": {
     "sprintId": "sprint-3",
-    "taskId": "s3-t6",
-    "label": "Sprint 3 · Task 6",
-    "title": "Implement Server Timer",
-    "summary": "Verify the server-authoritative start time, deadline, and duration before answer submission begins."
+    "taskId": "s3-t9",
+    "label": "Sprint 3 · Task 9",
+    "title": "Show Host Response Count",
+    "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
     "title": "One complete question",
@@ -216,25 +216,25 @@
           "id": "s3-t6",
           "number": 6,
           "title": "Implement Server Timer",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s3-t7",
           "number": 7,
           "title": "Implement Answer Submission",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s3-t8",
           "number": 8,
           "title": "Lock Answer Buttons",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s3-t9",
           "number": 9,
           "title": "Show Host Response Count",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s3-t10",
@@ -512,7 +512,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 120,
-    "commitSha": "7e09cec",
-    "updatedAt": "2026-07-30T13:34:57Z"
+    "commitSha": "06877ef",
+    "updatedAt": "2026-07-30T13:43:02Z"
   }
 }
