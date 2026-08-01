@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-6",
-    "taskId": "s6-t7",
-    "label": "Sprint 6 · Task 7",
-    "title": "Add Predefined Avatars",
+    "taskId": "s6-t8",
+    "label": "Sprint 6 · Task 8",
+    "title": "Add Personal Avatar Upload",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -24,7 +24,8 @@
     "Player final screen shows personal and complete results",
     "Permanent player accounts and report-ready history approved",
     "Players can recover a forgotten password by email",
-    "Signed-in players can change their username while keeping their permanent email identity"
+    "Signed-in players can change their username while keeping their permanent email identity",
+    "Signed-in players can choose a predefined avatar for their profile"
   ],
   "sprints": [
     {
@@ -401,13 +402,13 @@
           "id": "s6-t7",
           "number": 7,
           "title": "Add Predefined Avatars",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s6-t8",
           "number": 8,
           "title": "Add Personal Avatar Upload",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s6-t9",
@@ -648,8 +649,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 282,
-    "commitSha": "da0cda0",
-    "updatedAt": "2026-08-01T22:37:40Z"
+    "testCount": 292,
+    "commitSha": "641db9e",
+    "updatedAt": "2026-08-01T22:39:33Z"
   }
 }
