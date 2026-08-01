@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-6",
-    "taskId": "s6-t4",
-    "label": "Sprint 6 · Task 4",
-    "title": "Build Player Authentication",
+    "taskId": "s6-t7",
+    "label": "Sprint 6 · Task 7",
+    "title": "Add Predefined Avatars",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -22,7 +22,9 @@
     "First-time players can create permanent secured accounts",
     "Host final leaderboard highlights the top three",
     "Player final screen shows personal and complete results",
-    "Permanent player accounts and report-ready history approved"
+    "Permanent player accounts and report-ready history approved",
+    "Players can recover a forgotten password by email",
+    "Signed-in players can change their username while keeping their permanent email identity"
   ],
   "sprints": [
     {
@@ -381,25 +383,25 @@
           "id": "s6-t4",
           "number": 4,
           "title": "Build Player Authentication",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s6-t5",
           "number": 5,
           "title": "Add Self-Service Password Reset",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s6-t6",
           "number": 6,
           "title": "Add Username Editing",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s6-t7",
           "number": 7,
           "title": "Add Predefined Avatars",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s6-t8",
@@ -499,6 +501,66 @@
           "number": 11,
           "title": "Create Database and Avatar Backups",
           "status": "not-started"
+        },
+        {
+          "id": "QM-TAG-001",
+          "number": 12,
+          "title": "Add Tag Database Schema",
+          "status": "not-started"
+        },
+        {
+          "id": "QM-TAG-002",
+          "number": 13,
+          "title": "Extend CSV Import Format With Tags",
+          "status": "not-started"
+        },
+        {
+          "id": "QM-TAG-003",
+          "number": 14,
+          "title": "Persist And Update Question Tags",
+          "status": "not-started"
+        },
+        {
+          "id": "QM-TAG-004",
+          "number": 15,
+          "title": "Add Host Tag Filtering",
+          "status": "not-started"
+        },
+        {
+          "id": "QM-TAG-005",
+          "number": 16,
+          "title": "Save Tag Snapshots Per Game Question",
+          "status": "not-started"
+        },
+        {
+          "id": "QM-SCORE-001",
+          "number": 17,
+          "title": "Apply Difficulty Multipliers And Upward Rounding",
+          "status": "not-started"
+        },
+        {
+          "id": "QM-SCORE-002",
+          "number": 18,
+          "title": "Test Scoring Boundaries And Rounding",
+          "status": "not-started"
+        },
+        {
+          "id": "QM-CONTENT-001",
+          "number": 19,
+          "title": "Support Approved Categories And Controlled Tags",
+          "status": "not-started"
+        },
+        {
+          "id": "QM-DOC-001",
+          "number": 20,
+          "title": "Synchronize Affected Documentation",
+          "status": "in-progress"
+        },
+        {
+          "id": "QM-DOC-002",
+          "number": 21,
+          "title": "Import Approved External Source Documents",
+          "status": "not-started"
         }
       ]
     },
@@ -587,7 +649,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 282,
-    "commitSha": "edd133c",
-    "updatedAt": "2026-08-01T19:59:56Z"
+    "commitSha": "9fc33d8",
+    "updatedAt": "2026-08-01T21:02:51Z"
   }
 }
