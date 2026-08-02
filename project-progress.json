@@ -8,15 +8,15 @@
     "deployment": "Local Wi-Fi"
   },
   "currentTask": {
-    "sprintId": "sprint-6",
-    "taskId": "s6-t11",
-    "label": "Sprint 6 · Task 11",
-    "title": "Test Account and Profile Security",
+    "sprintId": "sprint-7",
+    "taskId": "s7-t1",
+    "label": "Sprint 7 · Task 1",
+    "title": "Extend Game Data Migrations",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
-    "title": "Players register, recover access, and join with permanent identities",
-    "summary": "Complete Sprint 6: Permanent Player Accounts and Profiles."
+    "title": "Complete account-linked game history persists in SQLite",
+    "summary": "Complete Sprint 7: Game Persistence and CSV Import."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -363,7 +363,7 @@
       "number": 6,
       "title": "Permanent Player Accounts and Profiles",
       "goal": "Players register, recover access, and join with permanent identities",
-      "status": "in-progress",
+      "status": "done",
       "tasks": [
         {
           "id": "s6-t1",
@@ -429,7 +429,7 @@
           "id": "s6-t11",
           "number": 11,
           "title": "Test Account and Profile Security",
-          "status": "current"
+          "status": "done"
         }
       ]
     },
@@ -438,13 +438,13 @@
       "number": 7,
       "title": "Game Persistence and CSV Import",
       "goal": "Complete account-linked game history persists in SQLite",
-      "status": "not-started",
+      "status": "in-progress",
       "tasks": [
         {
           "id": "s7-t1",
           "number": 1,
           "title": "Extend Game Data Migrations",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s7-t2",
@@ -652,8 +652,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 363,
-    "commitSha": "241ae0c",
-    "updatedAt": "2026-08-02T19:58:47Z"
+    "testCount": 369,
+    "commitSha": "8f2c84f",
+    "updatedAt": "2026-08-02T23:34:33Z"
   }
 }
