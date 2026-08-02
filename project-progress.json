@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-6",
-    "taskId": "s6-t9",
-    "label": "Sprint 6 · Task 9",
-    "title": "Require Authenticated Game Join",
+    "taskId": "s6-t10",
+    "label": "Sprint 6 · Task 10",
+    "title": "Bind Reconnect to Accounts",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -26,7 +26,8 @@
     "Players can recover a forgotten password by email",
     "Signed-in players can change their username while keeping their permanent email identity",
     "Signed-in players can choose a predefined avatar for their profile",
-    "Signed-in players can upload a personal photo as their avatar"
+    "Signed-in players can upload a personal photo as their avatar",
+    "Players must sign in before joining a game, with each participant linked to their permanent account"
   ],
   "sprints": [
     {
@@ -415,13 +416,13 @@
           "id": "s6-t9",
           "number": 9,
           "title": "Require Authenticated Game Join",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s6-t10",
           "number": 10,
           "title": "Bind Reconnect to Accounts",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s6-t11",
@@ -650,8 +651,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 322,
-    "commitSha": "f1c57e2",
-    "updatedAt": "2026-08-02T00:13:50Z"
+    "testCount": 341,
+    "commitSha": "4a97e4c",
+    "updatedAt": "2026-08-02T16:07:39Z"
   }
 }
