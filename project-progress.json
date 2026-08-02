@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-6",
-    "taskId": "s6-t10",
-    "label": "Sprint 6 · Task 10",
-    "title": "Bind Reconnect to Accounts",
+    "taskId": "s6-t11",
+    "label": "Sprint 6 · Task 11",
+    "title": "Test Account and Profile Security",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -27,7 +27,8 @@
     "Signed-in players can change their username while keeping their permanent email identity",
     "Signed-in players can choose a predefined avatar for their profile",
     "Signed-in players can upload a personal photo as their avatar",
-    "Players must sign in before joining a game, with each participant linked to their permanent account"
+    "Players must sign in before joining a game, with each participant linked to their permanent account",
+    "Reconnect restores the same signed-in player's participant without any reusable credential in the browser"
   ],
   "sprints": [
     {
@@ -422,13 +423,13 @@
           "id": "s6-t10",
           "number": 10,
           "title": "Bind Reconnect to Accounts",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s6-t11",
           "number": 11,
           "title": "Test Account and Profile Security",
-          "status": "not-started"
+          "status": "current"
         }
       ]
     },
@@ -651,8 +652,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 341,
-    "commitSha": "4a97e4c",
-    "updatedAt": "2026-08-02T16:07:39Z"
+    "testCount": 363,
+    "commitSha": "241ae0c",
+    "updatedAt": "2026-08-02T19:58:47Z"
   }
 }
