@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t1",
-    "label": "Sprint 7 · Task 1",
-    "title": "Extend Game Data Migrations",
+    "taskId": "s7-t2",
+    "label": "Sprint 7 · Task 2",
+    "title": "Seed Default Data",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -444,13 +444,13 @@
           "id": "s7-t1",
           "number": 1,
           "title": "Extend Game Data Migrations",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s7-t2",
           "number": 2,
           "title": "Seed Default Data",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s7-t3",
@@ -652,8 +652,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 369,
-    "commitSha": "8f2c84f",
-    "updatedAt": "2026-08-02T23:34:33Z"
+    "testCount": 371,
+    "commitSha": "a2024af",
+    "updatedAt": "2026-08-03T13:55:54Z"
   }
 }
