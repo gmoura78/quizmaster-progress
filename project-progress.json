@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t2",
-    "label": "Sprint 7 · Task 2",
-    "title": "Seed Default Data",
+    "taskId": "s7-t3",
+    "label": "Sprint 7 · Task 3",
+    "title": "Create CSV Template",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -450,13 +450,13 @@
           "id": "s7-t2",
           "number": 2,
           "title": "Seed Default Data",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s7-t3",
           "number": 3,
           "title": "Create CSV Template",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s7-t4",
@@ -652,8 +652,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 375,
-    "commitSha": "57c4f4a",
-    "updatedAt": "2026-08-03T22:37:54Z"
+    "testCount": 381,
+    "commitSha": "1ddc504",
+    "updatedAt": "2026-08-04T15:20:04Z"
   }
 }
