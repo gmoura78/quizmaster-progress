@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t3",
-    "label": "Sprint 7 · Task 3",
-    "title": "Create CSV Template",
+    "taskId": "s7-t4",
+    "label": "Sprint 7 · Task 4",
+    "title": "Create CSV Validator",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -456,13 +456,13 @@
           "id": "s7-t3",
           "number": 3,
           "title": "Create CSV Template",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s7-t4",
           "number": 4,
           "title": "Create CSV Validator",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s7-t5",
@@ -652,8 +652,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 381,
-    "commitSha": "1ddc504",
-    "updatedAt": "2026-08-04T15:20:04Z"
+    "testCount": 387,
+    "commitSha": "66ecaa3",
+    "updatedAt": "2026-08-04T16:59:48Z"
   }
 }
