@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t6",
-    "label": "Sprint 7 · Task 6",
-    "title": "Add Category Selection",
+    "taskId": "s7-t7",
+    "label": "Sprint 7 · Task 7",
+    "title": "Randomly Select Questions",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -32,7 +32,9 @@
     "Player profile actions remain compact and usable on mobile screens",
     "Players must sign in before joining a game, with each participant linked to their permanent account",
     "Reconnect restores the same signed-in player's participant without any reusable credential in the browser",
-    "Hosts can atomically import validated question CSV files with stable-ID updates and an auditable SHA-256 summary"
+    "Hosts can atomically import validated question CSV files with stable-ID updates and an auditable SHA-256 summary",
+    "Hosts can load and select multiple active question categories from SQLite",
+    "Player controllers display full answer text and preserve the selected answer after submission and reconnect"
   ],
   "sprints": [
     {
@@ -478,13 +480,13 @@
           "id": "s7-t6",
           "number": 6,
           "title": "Add Category Selection",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s7-t7",
           "number": 7,
           "title": "Randomly Select Questions",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s7-t8",
@@ -656,8 +658,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 446,
-    "commitSha": "eec344f",
-    "updatedAt": "2026-08-06T17:08:12Z"
+    "testCount": 467,
+    "commitSha": "0265437",
+    "updatedAt": "2026-08-06T22:59:05Z"
   }
 }
