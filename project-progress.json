@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t5",
-    "label": "Sprint 7 · Task 5",
-    "title": "Create Import Process",
+    "taskId": "s7-t6",
+    "label": "Sprint 7 · Task 6",
+    "title": "Add Category Selection",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -31,7 +31,8 @@
     "Signed-in players can upload a personal photo as their avatar",
     "Player profile actions remain compact and usable on mobile screens",
     "Players must sign in before joining a game, with each participant linked to their permanent account",
-    "Reconnect restores the same signed-in player's participant without any reusable credential in the browser"
+    "Reconnect restores the same signed-in player's participant without any reusable credential in the browser",
+    "Hosts can atomically import validated question CSV files with stable-ID updates and an auditable SHA-256 summary"
   ],
   "sprints": [
     {
@@ -471,13 +472,13 @@
           "id": "s7-t5",
           "number": 5,
           "title": "Create Import Process",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s7-t6",
           "number": 6,
           "title": "Add Category Selection",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s7-t7",
@@ -655,8 +656,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 441,
-    "commitSha": "df71a3b",
-    "updatedAt": "2026-08-06T13:07:27Z"
+    "testCount": 446,
+    "commitSha": "eec344f",
+    "updatedAt": "2026-08-06T17:08:12Z"
   }
 }
