@@ -23,10 +23,13 @@
     "Host final leaderboard highlights the top three",
     "Player final screen shows personal and complete results",
     "Permanent player accounts and report-ready history approved",
+    "Authenticated players see their profile instead of the hidden sign-in form",
     "Players can recover a forgotten password by email",
+    "Player login errors provide accessible field feedback without exposing account details",
     "Signed-in players can change their username while keeping their permanent email identity",
     "Signed-in players can choose a predefined avatar for their profile",
     "Signed-in players can upload a personal photo as their avatar",
+    "Player profile actions remain compact and usable on mobile screens",
     "Players must sign in before joining a game, with each participant linked to their permanent account",
     "Reconnect restores the same signed-in player's participant without any reusable credential in the browser"
   ],
@@ -653,7 +656,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 436,
-    "commitSha": "5c676c4",
-    "updatedAt": "2026-08-06T02:35:33Z"
+    "commitSha": "23bc49b",
+    "updatedAt": "2026-08-06T02:46:08Z"
   }
 }
