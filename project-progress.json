@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t7",
-    "label": "Sprint 7 · Task 7",
-    "title": "Randomly Select Questions",
+    "taskId": "s7-t8",
+    "label": "Sprint 7 · Task 8",
+    "title": "Save Complete Game History",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -486,13 +486,13 @@
           "id": "s7-t7",
           "number": 7,
           "title": "Randomly Select Questions",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s7-t8",
           "number": 8,
           "title": "Save Complete Game History",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s7-t9",
@@ -658,8 +658,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 481,
-    "commitSha": "f3c65d3",
-    "updatedAt": "2026-08-07T14:01:57Z"
+    "testCount": 487,
+    "commitSha": "1e86129",
+    "updatedAt": "2026-08-07T15:58:05Z"
   }
 }
