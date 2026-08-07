@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t8",
-    "label": "Sprint 7 · Task 8",
-    "title": "Save Complete Game History",
+    "taskId": "s7-t9",
+    "label": "Sprint 7 · Task 9",
+    "title": "Add Report-Ready History Queries",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -492,13 +492,13 @@
           "id": "s7-t8",
           "number": 8,
           "title": "Save Complete Game History",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s7-t9",
           "number": 9,
           "title": "Add Report-Ready History Queries",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s7-t10",
@@ -658,8 +658,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 487,
-    "commitSha": "1e86129",
-    "updatedAt": "2026-08-07T15:58:05Z"
+    "testCount": 498,
+    "commitSha": "89425a0",
+    "updatedAt": "2026-08-07T19:30:44Z"
   }
 }
