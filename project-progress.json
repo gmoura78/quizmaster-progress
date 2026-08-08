@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t10",
-    "label": "Sprint 7 · Task 10",
-    "title": "Verify Account-Linked Persistence",
+    "taskId": "s7-t11",
+    "label": "Sprint 7 · Task 11",
+    "title": "Create Database and Avatar Backups",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -504,13 +504,13 @@
           "id": "s7-t10",
           "number": 10,
           "title": "Verify Account-Linked Persistence",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s7-t11",
           "number": 11,
           "title": "Create Database and Avatar Backups",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "QM-TAG-001",
@@ -658,8 +658,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 539,
-    "commitSha": "6aed50c",
-    "updatedAt": "2026-08-08T17:49:40Z"
+    "testCount": 540,
+    "commitSha": "ec08bcd",
+    "updatedAt": "2026-08-08T19:15:37Z"
   }
 }
