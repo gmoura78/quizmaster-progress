@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "s7-t11",
-    "label": "Sprint 7 · Task 11",
-    "title": "Create Database and Avatar Backups",
+    "taskId": "QM-TAG-001",
+    "label": "Sprint 7 · Task 12",
+    "title": "Add Tag Database Schema",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -510,13 +510,13 @@
           "id": "s7-t11",
           "number": 11,
           "title": "Create Database and Avatar Backups",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-TAG-001",
           "number": 12,
           "title": "Add Tag Database Schema",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "QM-TAG-002",
@@ -658,8 +658,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 540,
-    "commitSha": "ec08bcd",
-    "updatedAt": "2026-08-08T19:15:37Z"
+    "testCount": 559,
+    "commitSha": "3e53d8e",
+    "updatedAt": "2026-08-08T21:29:32Z"
   }
 }
