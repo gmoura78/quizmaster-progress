@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "QM-TAG-001",
-    "label": "Sprint 7 · Task 12",
-    "title": "Add Tag Database Schema",
+    "taskId": "QM-TAG-002",
+    "label": "Sprint 7 · Task 13",
+    "title": "Extend CSV Import Format With Tags",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -516,13 +516,13 @@
           "id": "QM-TAG-001",
           "number": 12,
           "title": "Add Tag Database Schema",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-TAG-002",
           "number": 13,
           "title": "Extend CSV Import Format With Tags",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "QM-TAG-003",
@@ -659,7 +659,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 559,
-    "commitSha": "3e53d8e",
-    "updatedAt": "2026-08-08T21:29:32Z"
+    "commitSha": "bdfe2cb",
+    "updatedAt": "2026-08-09T16:36:21Z"
   }
 }
