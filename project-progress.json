@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "QM-SCORE-002",
-    "label": "Sprint 7 · Task 18",
-    "title": "Test Scoring Boundaries And Rounding",
+    "taskId": "QM-CONTENT-001",
+    "label": "Sprint 7 · Task 19",
+    "title": "Support Approved Categories And Controlled Tags",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -552,13 +552,13 @@
           "id": "QM-SCORE-002",
           "number": 18,
           "title": "Test Scoring Boundaries And Rounding",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-CONTENT-001",
           "number": 19,
           "title": "Support Approved Categories And Controlled Tags",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "QM-DOC-001",
@@ -659,7 +659,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 576,
-    "commitSha": "800bcb8",
-    "updatedAt": "2026-08-10T17:54:57Z"
+    "commitSha": "76b3797",
+    "updatedAt": "2026-08-10T17:58:16Z"
   }
 }
