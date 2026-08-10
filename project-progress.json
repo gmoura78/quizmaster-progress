@@ -8,15 +8,15 @@
     "deployment": "Local Wi-Fi"
   },
   "currentTask": {
-    "sprintId": "sprint-7",
-    "taskId": "QM-DOC-002",
-    "label": "Sprint 7 · Task 21",
-    "title": "Import Approved External Source Documents",
+    "sprintId": "sprint-8",
+    "taskId": "s8-t1",
+    "label": "Sprint 8 · Task 1",
+    "title": "Test Network and Reset Email",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
-    "title": "Complete account-linked game history persists in SQLite",
-    "summary": "Complete Sprint 7: Game Persistence and CSV Import."
+    "title": "MVP packaged and ready for live use",
+    "summary": "Complete Sprint 8: Testing, Polish, and Rehearsal."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -444,7 +444,7 @@
       "number": 7,
       "title": "Game Persistence and CSV Import",
       "goal": "Complete account-linked game history persists in SQLite",
-      "status": "in-progress",
+      "status": "done",
       "tasks": [
         {
           "id": "s7-t1",
@@ -570,7 +570,7 @@
           "id": "QM-DOC-002",
           "number": 21,
           "title": "Import Approved External Source Documents",
-          "status": "current"
+          "status": "done"
         }
       ]
     },
@@ -579,13 +579,13 @@
       "number": 8,
       "title": "Testing, Polish, and Rehearsal",
       "goal": "MVP packaged and ready for live use",
-      "status": "not-started",
+      "status": "in-progress",
       "tasks": [
         {
           "id": "s8-t1",
           "number": 1,
           "title": "Test Network and Reset Email",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s8-t2",
@@ -659,7 +659,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 584,
-    "commitSha": "0d92c8c",
-    "updatedAt": "2026-08-10T19:21:52Z"
+    "commitSha": "06b31d0",
+    "updatedAt": "2026-08-10T19:26:43Z"
   }
 }
