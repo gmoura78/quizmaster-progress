@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "QM-TAG-005",
-    "label": "Sprint 7 · Task 16",
-    "title": "Save Tag Snapshots Per Game Question",
+    "taskId": "QM-SCORE-001",
+    "label": "Sprint 7 · Task 17",
+    "title": "Apply Difficulty Multipliers And Upward Rounding",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -540,13 +540,13 @@
           "id": "QM-TAG-005",
           "number": 16,
           "title": "Save Tag Snapshots Per Game Question",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-SCORE-001",
           "number": 17,
           "title": "Apply Difficulty Multipliers And Upward Rounding",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "QM-SCORE-002",
@@ -659,7 +659,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 576,
-    "commitSha": "b7f53ec",
-    "updatedAt": "2026-08-10T16:50:13Z"
+    "commitSha": "9fdf5b7",
+    "updatedAt": "2026-08-10T17:02:07Z"
   }
 }
