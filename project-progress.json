@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "QM-SCORE-001",
-    "label": "Sprint 7 · Task 17",
-    "title": "Apply Difficulty Multipliers And Upward Rounding",
+    "taskId": "QM-SCORE-002",
+    "label": "Sprint 7 · Task 18",
+    "title": "Test Scoring Boundaries And Rounding",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -546,13 +546,13 @@
           "id": "QM-SCORE-001",
           "number": 17,
           "title": "Apply Difficulty Multipliers And Upward Rounding",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-SCORE-002",
           "number": 18,
           "title": "Test Scoring Boundaries And Rounding",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "QM-CONTENT-001",
@@ -659,7 +659,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 576,
-    "commitSha": "9fdf5b7",
-    "updatedAt": "2026-08-10T17:02:07Z"
+    "commitSha": "800bcb8",
+    "updatedAt": "2026-08-10T17:54:57Z"
   }
 }
