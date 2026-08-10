@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "QM-TAG-004",
-    "label": "Sprint 7 · Task 15",
-    "title": "Add Host Tag Filtering",
+    "taskId": "QM-TAG-005",
+    "label": "Sprint 7 · Task 16",
+    "title": "Save Tag Snapshots Per Game Question",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -534,13 +534,13 @@
           "id": "QM-TAG-004",
           "number": 15,
           "title": "Add Host Tag Filtering",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-TAG-005",
           "number": 16,
           "title": "Save Tag Snapshots Per Game Question",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "QM-SCORE-001",
@@ -658,8 +658,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 559,
-    "commitSha": "d0e3313",
-    "updatedAt": "2026-08-10T15:16:53Z"
+    "testCount": 576,
+    "commitSha": "b7f53ec",
+    "updatedAt": "2026-08-10T16:50:13Z"
   }
 }
