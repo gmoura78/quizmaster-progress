@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "QM-TAG-002",
-    "label": "Sprint 7 · Task 13",
-    "title": "Extend CSV Import Format With Tags",
+    "taskId": "QM-TAG-003",
+    "label": "Sprint 7 · Task 14",
+    "title": "Persist And Update Question Tags",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -522,13 +522,13 @@
           "id": "QM-TAG-002",
           "number": 13,
           "title": "Extend CSV Import Format With Tags",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-TAG-003",
           "number": 14,
           "title": "Persist And Update Question Tags",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "QM-TAG-004",
@@ -659,7 +659,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 559,
-    "commitSha": "bdfe2cb",
-    "updatedAt": "2026-08-09T16:36:21Z"
+    "commitSha": "b7ca2bf",
+    "updatedAt": "2026-08-10T15:05:54Z"
   }
 }
