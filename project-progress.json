@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "QM-DOC-001",
-    "label": "Sprint 7 · Task 20",
-    "title": "Synchronize Affected Documentation",
+    "taskId": "QM-DOC-002",
+    "label": "Sprint 7 · Task 21",
+    "title": "Import Approved External Source Documents",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -564,13 +564,13 @@
           "id": "QM-DOC-001",
           "number": 20,
           "title": "Synchronize Affected Documentation",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-DOC-002",
           "number": 21,
           "title": "Import Approved External Source Documents",
-          "status": "not-started"
+          "status": "current"
         }
       ]
     },
@@ -659,7 +659,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 584,
-    "commitSha": "7044b6c",
-    "updatedAt": "2026-08-10T19:19:26Z"
+    "commitSha": "0d92c8c",
+    "updatedAt": "2026-08-10T19:21:52Z"
   }
 }
