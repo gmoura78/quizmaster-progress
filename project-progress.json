@@ -9,9 +9,9 @@
   },
   "currentTask": {
     "sprintId": "sprint-7",
-    "taskId": "QM-CONTENT-001",
-    "label": "Sprint 7 · Task 19",
-    "title": "Support Approved Categories And Controlled Tags",
+    "taskId": "QM-DOC-001",
+    "label": "Sprint 7 · Task 20",
+    "title": "Synchronize Affected Documentation",
     "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
   },
   "nextMilestone": {
@@ -558,13 +558,13 @@
           "id": "QM-CONTENT-001",
           "number": 19,
           "title": "Support Approved Categories And Controlled Tags",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "QM-DOC-001",
           "number": 20,
           "title": "Synchronize Affected Documentation",
-          "status": "in-progress"
+          "status": "current"
         },
         {
           "id": "QM-DOC-002",
@@ -659,7 +659,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 584,
-    "commitSha": "255dbbb",
-    "updatedAt": "2026-08-10T18:49:16Z"
+    "commitSha": "1c1d743",
+    "updatedAt": "2026-08-10T18:51:14Z"
   }
 }
