@@ -2,7 +2,18 @@ const STATUS_LABELS = {
   done: "Complete",
   current: "Current",
   "in-progress": "In progress",
-  "not-started": "Planned"
+  "not-started": "Planned",
+  blocked: "Blocked",
+  testing: "Testing",
+  deferred: "Deferred"
+};
+
+const STATUS_ICONS = {
+  done: "✓",
+  current: "•",
+  blocked: "!",
+  testing: "↻",
+  deferred: "–"
 };
 
 function text(elementId, value) {
@@ -35,7 +46,7 @@ function createTask(task) {
 
   item.className = `task-item task-item--${task.status}`;
   status.className = "task-status";
-  status.textContent = task.status === "done" ? "✓" : task.status === "current" ? "•" : "";
+  status.textContent = STATUS_ICONS[task.status] ?? "";
   label.textContent = `${task.number}. ${task.title}`;
 
   item.setAttribute(

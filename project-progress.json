@@ -9,14 +9,14 @@
   },
   "currentTask": {
     "sprintId": "sprint-8",
-    "taskId": "s8-t1",
-    "label": "Sprint 8 · Task 1",
-    "title": "Test Network and Reset Email",
-    "summary": "Complete the approved roadmap task and pass its acceptance checks before advancing."
+    "taskId": "s8-t10",
+    "label": "Sprint 8 · Task 10",
+    "title": "Create Full Release Backup",
+    "summary": "Package the source, database, question CSV files, images, avatars, documentation, and safe configuration template into a verified release backup."
   },
   "nextMilestone": {
-    "title": "MVP packaged and ready for live use",
-    "summary": "Complete Sprint 8: Testing, Polish, and Rehearsal."
+    "title": "Versioned MVP candidate",
+    "summary": "Complete the release backup, then assign v0.1.0 MVP after all release checks pass."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -34,7 +34,11 @@
     "Reconnect restores the same signed-in player's participant without any reusable credential in the browser",
     "Hosts can atomically import validated question CSV files with stable-ID updates and an auditable SHA-256 summary",
     "Hosts can load and select multiple active question categories from SQLite",
-    "Player controllers display full answer text and preserve the selected answer after submission and reconnect"
+    "Player controllers display full answer text and preserve the selected answer after submission and reconnect",
+    "Twenty-five authenticated players connect concurrently in automated load testing",
+    "Host and player layouts passed desktop and mobile acceptance checks",
+    "The Windows launcher starts QuizMaster and opens the Host Dashboard",
+    "The recovery runbook covers restart, rejoin, restore, email outage, fallback-router use, and blocked Wi-Fi escalation"
   ],
   "sprints": [
     {
@@ -585,61 +589,61 @@
           "id": "s8-t1",
           "number": 1,
           "title": "Test Network and Reset Email",
-          "status": "current"
+          "status": "blocked"
         },
         {
           "id": "s8-t2",
           "number": 2,
           "title": "Test Multiple Devices",
-          "status": "not-started"
+          "status": "testing"
         },
         {
           "id": "s8-t3",
           "number": 3,
           "title": "Run Load Test",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s8-t4",
           "number": 4,
           "title": "Test Account Reconnection",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s8-t5",
           "number": 5,
           "title": "Test Full Game Repeatedly",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s8-t6",
           "number": 6,
           "title": "Improve Mobile Layout",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s8-t7",
           "number": 7,
           "title": "Improve Host Layout",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s8-t8",
           "number": 8,
           "title": "Create Simple Startup Script",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s8-t9",
           "number": 9,
           "title": "Create Recovery and Email-Outage Notes",
-          "status": "not-started"
+          "status": "done"
         },
         {
           "id": "s8-t10",
           "number": 10,
           "title": "Create Full Release Backup",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s8-t11",
@@ -658,8 +662,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 589,
-    "commitSha": "540c90a",
-    "updatedAt": "2026-08-14T14:05:36Z"
+    "testCount": 594,
+    "commitSha": "76e3cf7",
+    "updatedAt": "2026-08-15T13:42:34Z"
   }
 }

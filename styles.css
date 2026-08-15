@@ -369,6 +369,14 @@ footer {
   background: var(--cyan);
 }
 
+.legend-dot--testing {
+  background: var(--amber);
+}
+
+.legend-dot--blocked {
+  background: #ff7185;
+}
+
 .sprint-list {
   display: grid;
   gap: 14px;
@@ -476,6 +484,18 @@ footer {
   color: var(--text);
 }
 
+.task-item--testing {
+  border-color: rgb(255 193 92 / 30%);
+  background: rgb(255 193 92 / 8%);
+  color: #ffdfaa;
+}
+
+.task-item--blocked {
+  border-color: rgb(255 113 133 / 30%);
+  background: rgb(255 113 133 / 8%);
+  color: #ffc2cb;
+}
+
 .task-status {
   display: grid;
   width: 22px;
@@ -497,6 +517,17 @@ footer {
 .task-item--current .task-status {
   border-color: var(--cyan);
   color: var(--cyan);
+}
+
+.task-item--testing .task-status {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.task-item--blocked .task-status {
+  border-color: #ff7185;
+  color: #ff7185;
+  font-weight: 950;
 }
 
 .lower-grid {
