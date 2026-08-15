@@ -12,11 +12,11 @@
     "taskId": "s8-t11",
     "label": "Sprint 8 · Task 11",
     "title": "Assign Version",
-    "summary": "Version 0.1.0 is already declared in package metadata. Reconcile the remaining release checks before creating and accepting the v0.1.0 MVP tag."
+    "summary": "Version 0.1.0 and the release documentation are prepared. Complete the same-Wi-Fi phone acceptance and host/player rehearsal from the home computer before creating the v0.1.0 MVP tag."
   },
   "nextMilestone": {
-    "title": "Host and player rehearsal",
-    "summary": "Complete version assignment after the release checks pass, then rehearse the complete host and first-time-player flows."
+    "title": "Home same-Wi-Fi phone acceptance",
+    "summary": "Pull main on the home computer, start QuizMaster with the Windows launcher, and verify QR/LAN access, answer submission, timeout, images, synchronized progression, reconnection, and the final leaderboard from a physical phone."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -39,7 +39,8 @@
     "Host and player layouts passed desktop and mobile acceptance checks",
     "The Windows launcher starts QuizMaster and opens the Host Dashboard",
     "The recovery runbook covers restart, rejoin, restore, email outage, fallback-router use, and blocked Wi-Fi escalation",
-    "The Windows release backup was created and manually verified: 354 manifest-checked files, required source, database, and test payloads present, and .env plus node_modules absent"
+    "The Windows release backup was created and manually verified: 354 manifest-checked files, required source, database, and test payloads present, and .env plus node_modules absent",
+    "Release preparation is committed at 2d707bc: build, typecheck, the 600-test suite, and progress validation passed; the v0.1.0 tag remains intentionally pending home phone acceptance"
   ],
   "sprints": [
     {
@@ -664,7 +665,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 600,
-    "commitSha": "2d707bc",
-    "updatedAt": "2026-08-15T18:10:50Z"
+    "commitSha": "5fc53e6",
+    "updatedAt": "2026-08-15T18:20:58Z"
   }
 }
