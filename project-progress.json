@@ -12,7 +12,7 @@
     "taskId": "s8-t10",
     "label": "Sprint 8 · Task 10",
     "title": "Create Full Release Backup",
-    "summary": "Package the source, database, question CSV files, images, avatars, documentation, and safe configuration template into a verified release backup."
+    "summary": "The verified release-backup command is ready. Run it once on the Windows host and inspect the manifest before accepting Task 10."
   },
   "nextMilestone": {
     "title": "Versioned MVP candidate",
@@ -38,7 +38,8 @@
     "Twenty-five authenticated players connect concurrently in automated load testing",
     "Host and player layouts passed desktop and mobile acceptance checks",
     "The Windows launcher starts QuizMaster and opens the Host Dashboard",
-    "The recovery runbook covers restart, rejoin, restore, email outage, fallback-router use, and blocked Wi-Fi escalation"
+    "The recovery runbook covers restart, rejoin, restore, email outage, fallback-router use, and blocked Wi-Fi escalation",
+    "Release backups include source, a WAL-safe database snapshot, CSV files, images, avatars, docs, a safe configuration template, and SHA-256 verification"
   ],
   "sprints": [
     {
@@ -662,8 +663,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 594,
-    "commitSha": "2de887f",
-    "updatedAt": "2026-08-15T13:44:36Z"
+    "testCount": 599,
+    "commitSha": "dd8b0f0",
+    "updatedAt": "2026-08-15T14:25:10Z"
   }
 }
