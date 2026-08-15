@@ -461,17 +461,83 @@ footer {
   list-style: none;
 }
 
+.sprint-governance {
+  margin: 0 24px 18px 88px;
+  padding: 18px 20px;
+  border: 1px solid rgb(64 217 255 / 18%);
+  border-radius: 14px;
+  background: rgb(64 217 255 / 5%);
+  color: #c4d2e1;
+  font-size: 0.78rem;
+}
+
+.sprint-governance h4,
+.sprint-governance p {
+  margin-top: 0;
+}
+
+.sprint-governance h4 {
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
+.sprint-planning-note {
+  margin-bottom: 16px;
+  color: var(--cyan);
+  font-weight: 800;
+}
+
+.source-hierarchy {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.source-review-note {
+  margin: 16px 0 0;
+  color: #ffdfaa;
+}
+
 .task-item {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 10px;
-  align-items: center;
+  align-items: start;
   min-height: 48px;
   padding: 10px 12px;
   border: 1px solid transparent;
   border-radius: 12px;
   color: #b7c4d3;
   font-size: 0.82rem;
+}
+
+.task-status {
+  margin-top: 1px;
+}
+
+.task-content {
+  min-width: 0;
+}
+
+.task-title {
+  display: block;
+}
+
+.task-work,
+.task-gate {
+  margin: 5px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.task-gate {
+  color: #c9d8e7;
+}
+
+.task-gate strong {
+  color: #eef6ff;
 }
 
 .task-item--done {
@@ -695,8 +761,13 @@ footer {
     text-align: left;
   }
 
-  .task-list {
+  .task-list,
+  .sprint-governance {
     padding-left: 24px;
+  }
+
+  .sprint-governance {
+    margin-left: 24px;
   }
 
   .build-facts {

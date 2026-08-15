@@ -660,12 +660,126 @@
           "status": "not-started"
         }
       ]
+    },
+    {
+      "id": "sprint-9",
+      "number": 9,
+      "title": "Production Question Bank",
+      "goal": "Build a governed, evidence-backed production question bank",
+      "status": "not-started",
+      "planningNote": "Planning only: production question research has not begun.",
+      "sourceHierarchy": [
+        "Official GM order guides, specifications, manuals, and service information",
+        "Government or recognized authorities such as EPA/FuelEconomy.gov and NHTSA",
+        "Approved dealership policies and training documents",
+        "Competitor manufacturers’ official material for comparisons",
+        "Secondary sources for discovery only—not final evidence"
+      ],
+      "reviewNote": "Prices, incentives, availability, finance terms, warranties, towing, safety, and competitor claims require especially careful review.",
+      "tasks": [
+        {
+          "id": "s9-t1",
+          "number": 1,
+          "title": "Establish Governance",
+          "work": "Define researcher, reviewer, final approver, source rules, naming, and review dates.",
+          "completionGate": "Written workflow approved.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t2",
+          "number": 2,
+          "title": "Prioritize Coverage",
+          "work": "Use the training survey and business priorities to rank vehicles and knowledge categories.",
+          "completionGate": "First production batch selected.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t3",
+          "number": 3,
+          "title": "Build Vehicle Catalog",
+          "work": "Add exact model year, model, trim/powertrain scope, category, and tags.",
+          "completionGate": "No sample records remain in active scope.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t4",
+          "number": 4,
+          "title": "Register Sources",
+          "work": "Record official GM guides, owner manuals, EPA/NHTSA sources, and dealership policies.",
+          "completionGate": "Every source has an ID, owner, access date, and review cycle.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t5",
+          "number": 5,
+          "title": "Research Facts",
+          "work": "Populate normalized facts with exact configurations, units, source locations, and verification dates.",
+          "completionGate": "Required blueprint coverage is recorded as verified, unavailable, or not applicable.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t6",
+          "number": 6,
+          "title": "Draft Questions",
+          "work": "Create questions from verified facts using stable external IDs.",
+          "completionGate": "Every question has evidence and exactly one defensible answer.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t7",
+          "number": 7,
+          "title": "Review and Approve",
+          "work": "Check wording, distractors, explanation, difficulty, tags, image rights, and volatility.",
+          "completionGate": "Status is APPROVED; readiness is READY.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t8",
+          "number": 8,
+          "title": "Export and Validate",
+          "work": "Copy only ready rows into the exact 15-column export and save as UTF-8 CSV.",
+          "completionGate": "QuizMaster validator reports zero errors.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t9",
+          "number": 9,
+          "title": "Import and Verify",
+          "work": "Import through the host dashboard, creating the automatic pre-import backup.",
+          "completionGate": "Expected created/updated counts and inventory totals confirmed.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t10",
+          "number": 10,
+          "title": "Acceptance Game",
+          "work": "Play representative multiple-choice, True/False, image, timeout, and reconnect questions.",
+          "completionGate": "Host/player results and persisted history pass.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t11",
+          "number": 11,
+          "title": "Publish Content Package",
+          "work": "Commit the approved CSV, workbook updates, and rights-cleared images.",
+          "completionGate": "Home computer can reproduce the database after git pull.",
+          "status": "not-started"
+        },
+        {
+          "id": "s9-t12",
+          "number": 12,
+          "title": "Maintain",
+          "work": "Review by model year and review-due date; retire obsolete questions without reusing IDs.",
+          "completionGate": "Recurring content review established.",
+          "status": "not-started"
+        }
+      ]
     }
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 600,
-    "commitSha": "5fc53e6",
-    "updatedAt": "2026-08-15T18:20:58Z"
+    "testCount": 601,
+    "commitSha": "ba4a3bb",
+    "updatedAt": "2026-08-15T19:53:45Z"
   }
 }

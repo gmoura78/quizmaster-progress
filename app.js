@@ -42,19 +42,80 @@ function calculateProgress(sprints) {
 function createTask(task) {
   const item = document.createElement("li");
   const status = document.createElement("span");
+  const content = document.createElement("div");
   const label = document.createElement("span");
 
   item.className = `task-item task-item--${task.status}`;
   status.className = "task-status";
   status.textContent = STATUS_ICONS[task.status] ?? "";
+  content.className = "task-content";
+  label.className = "task-title";
   label.textContent = `${task.number}. ${task.title}`;
+
+  content.append(label);
+
+  if (task.work) {
+    const work = document.createElement("p");
+    work.className = "task-work";
+    work.textContent = task.work;
+    content.append(work);
+  }
+
+  if (task.completionGate) {
+    const gate = document.createElement("p");
+    const gateLabel = document.createElement("strong");
+    gate.className = "task-gate";
+    gateLabel.textContent = "Completion gate:";
+    gate.append(gateLabel, ` ${task.completionGate}`);
+    content.append(gate);
+  }
 
   item.setAttribute(
     "aria-label",
     `${task.title}: ${STATUS_LABELS[task.status] ?? task.status}`
   );
-  item.append(status, label);
+  item.append(status, content);
   return item;
+}
+
+function createSprintGovernance(sprint) {
+  if (!sprint.planningNote && !sprint.sourceHierarchy?.length && !sprint.reviewNote) {
+    return null;
+  }
+
+  const governance = document.createElement("section");
+  governance.className = "sprint-governance";
+
+  if (sprint.planningNote) {
+    const planningNote = document.createElement("p");
+    planningNote.className = "sprint-planning-note";
+    planningNote.textContent = sprint.planningNote;
+    governance.append(planningNote);
+  }
+
+  if (sprint.sourceHierarchy?.length) {
+    const heading = document.createElement("h4");
+    const sourceList = document.createElement("ol");
+    heading.textContent = "Source hierarchy";
+    sourceList.className = "source-hierarchy";
+
+    sprint.sourceHierarchy.forEach((source) => {
+      const item = document.createElement("li");
+      item.textContent = source;
+      sourceList.append(item);
+    });
+
+    governance.append(heading, sourceList);
+  }
+
+  if (sprint.reviewNote) {
+    const reviewNote = document.createElement("p");
+    reviewNote.className = "source-review-note";
+    reviewNote.textContent = sprint.reviewNote;
+    governance.append(reviewNote);
+  }
+
+  return governance;
 }
 
 function createSprint(sprint) {
@@ -69,6 +130,7 @@ function createSprint(sprint) {
   const metricValue = document.createElement("strong");
   const metricLabel = document.createElement("span");
   const taskList = document.createElement("ul");
+  const governance = createSprintGovernance(sprint);
 
   details.className = "sprint-card";
   details.open = sprint.status === "in-progress";
@@ -87,7 +149,13 @@ function createSprint(sprint) {
   heading.append(title, goal);
   metric.append(metricValue, metricLabel);
   summary.append(number, heading, metric);
-  details.append(summary, taskList);
+  details.append(summary);
+
+  if (governance) {
+    details.append(governance);
+  }
+
+  details.append(taskList);
   return details;
 }
 
@@ -123,7 +191,7 @@ function render(data) {
   text("completion-percentage", `${progress.percentage}%`);
   text(
     "completion-caption",
-    `${progress.completed} of ${progress.total} approved MVP tasks complete`
+    `${progress.completed} of ${progress.total} approved roadmap tasks complete`
   );
 
   if (progressRing) {
