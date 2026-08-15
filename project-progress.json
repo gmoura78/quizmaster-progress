@@ -9,14 +9,14 @@
   },
   "currentTask": {
     "sprintId": "sprint-8",
-    "taskId": "s8-t10",
-    "label": "Sprint 8 · Task 10",
-    "title": "Create Full Release Backup",
-    "summary": "The verified release-backup command is ready. Run it once on the Windows host and inspect the manifest before accepting Task 10."
+    "taskId": "s8-t11",
+    "label": "Sprint 8 · Task 11",
+    "title": "Assign Version",
+    "summary": "Version 0.1.0 is already declared in package metadata. Reconcile the remaining release checks before creating and accepting the v0.1.0 MVP tag."
   },
   "nextMilestone": {
-    "title": "Versioned MVP candidate",
-    "summary": "Complete the release backup, then assign v0.1.0 MVP after all release checks pass."
+    "title": "Host and player rehearsal",
+    "summary": "Complete version assignment after the release checks pass, then rehearse the complete host and first-time-player flows."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -39,7 +39,7 @@
     "Host and player layouts passed desktop and mobile acceptance checks",
     "The Windows launcher starts QuizMaster and opens the Host Dashboard",
     "The recovery runbook covers restart, rejoin, restore, email outage, fallback-router use, and blocked Wi-Fi escalation",
-    "Release backups include source, a WAL-safe database snapshot, CSV files, images, avatars, docs, a safe configuration template, and SHA-256 verification"
+    "The Windows release backup was created and manually verified: 354 manifest-checked files, required source, database, and test payloads present, and .env plus node_modules absent"
   ],
   "sprints": [
     {
@@ -644,13 +644,13 @@
           "id": "s8-t10",
           "number": 10,
           "title": "Create Full Release Backup",
-          "status": "current"
+          "status": "done"
         },
         {
           "id": "s8-t11",
           "number": 11,
           "title": "Assign Version",
-          "status": "not-started"
+          "status": "current"
         },
         {
           "id": "s8-t12",
@@ -662,9 +662,9 @@
     }
   ],
   "build": {
-    "testStatus": "passed",
+    "testStatus": "failed",
     "testCount": 599,
-    "commitSha": "dd8b0f0",
-    "updatedAt": "2026-08-15T14:25:10Z"
+    "commitSha": "0e8f912",
+    "updatedAt": "2026-08-15T15:41:51Z"
   }
 }
