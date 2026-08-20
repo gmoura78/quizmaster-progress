@@ -5,18 +5,18 @@
     "subtitle": "Dealership training game",
     "status": "MVP development",
     "capacity": "Up to 25 players",
-    "deployment": "Local Wi-Fi"
+    "deployment": "Web-hosted public HTTPS staging (accepted, D-0061); render.yaml is back to the Free plan with no persistent disk (D-0063 defers Task 6a/D-0062's Starter-plan-plus-disk design); local Wi-Fi retained as a supported fallback and development mode"
   },
   "currentTask": {
-    "sprintId": "sprint-8",
-    "taskId": "s8-t11",
-    "label": "Sprint 8 · Task 11",
-    "title": "Assign Version",
-    "summary": "Version 0.1.0 and the release documentation are prepared. Complete the same-Wi-Fi phone acceptance and host/player rehearsal from the home computer before creating the v0.1.0 MVP tag."
+    "sprintId": "sprint-cloud-foundation",
+    "taskId": "cf-t6",
+    "label": "Cloud Deployment Foundation · Task 6",
+    "title": "Implement Durable Cloud Persistence (deferred)",
+    "summary": "Task 6 research recommended keeping SQLite and attaching a Render persistent disk for the current pilot stage rather than migrating to PostgreSQL now. Task 6a designed that (D-0062): render.yaml briefly specified the Starter plan and a persistent disk (quizmaster-data, mounted at /opt/render/project/src/data, 1 GB) covering the existing ./data/ directory. The project owner has since deferred implementation (D-0063): render.yaml is back to plan: free with no disk block, and no Starter-plan upgrade, disk creation, or recurring Render cost is authorized. D-0062's design remains the preferred pilot-stage architecture for whenever paid persistence is activated, but Task 6 is not being actively implemented while this deferral stands. Task 6 remains open (not done, not deployed) pending explicit project-owner approval to resume, followed eventually by a real Render restart-acceptance test (host authentication, an existing player account, imported questions, completed game history, an uploaded avatar, backup files, and the health check all surviving a deliberate restart)."
   },
   "nextMilestone": {
-    "title": "Home same-Wi-Fi phone acceptance",
-    "summary": "Pull main on the home computer, start QuizMaster with the Windows launcher, and verify QR/LAN access, answer submission, timeout, images, synchronized progression, reconnection, and the final leaderboard from a physical phone."
+    "title": "Project-owner approval to resume Task 6a",
+    "summary": "Task 6 stays deferred (D-0063) until the project owner approves resuming paid durable persistence — triggered by a real dealership pilot being scheduled, staging data loss becoming operationally unacceptable, staging holding valuable non-reconstructable data, or commercial/pre-production readiness requiring durability. Only after that approval should render.yaml be changed back to the Starter plan with a disk, deployed, and then deliberately restart-tested (host authentication, an existing player account, imported questions, completed game history, an uploaded avatar, and backup files all surviving, plus the health check passing). Free staging remains usable for continued development and testing in the meantime."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -40,7 +40,17 @@
     "The Windows launcher starts QuizMaster and opens the Host Dashboard",
     "The recovery runbook covers restart, rejoin, restore, email outage, fallback-router use, and blocked Wi-Fi escalation",
     "The Windows release backup was created and manually verified: 354 manifest-checked files, required source, database, and test payloads present, and .env plus node_modules absent",
-    "Release preparation is committed at 2d707bc: build, typecheck, the 600-test suite, and progress validation passed; the v0.1.0 tag remains intentionally pending home phone acceptance"
+    "Release preparation is committed at 2d707bc: build, typecheck, the 600-test suite, and progress validation passed; the v0.1.0 tag remains intentionally pending home phone acceptance",
+    "D-0061 approves web-hosted deployment as QuizMaster's primary deployment model, with local Wi-Fi hosting retained as a supported fallback",
+    "Game join URLs and QR codes now use a public APP_BASE_URL when it is set, and fall back to the detected LAN IPv4 address for local hosting",
+    "Host and player session cookies are marked Secure automatically when APP_BASE_URL is a public HTTPS URL, with local HTTP behavior unchanged",
+    "A root-level render.yaml defines the Render staging service, with all secrets configured outside the repository",
+    "Cloud Deployment Foundation Task 5 is accepted: the public Render staging deployment (https://quizmaster-staging.onrender.com) passed real-device acceptance, including cellular-only gameplay with Wi-Fi disabled, public QR/join URL, and host/player authentication",
+    "The player question-image remediation is confirmed accepted on a real device: image rendering, phone layout, and refresh/reconnect restoration during an active image question all passed at deployed commit d211760",
+    "Host and player final results matched exactly on staging (324 points, 3 of 5 correct, rank #1 of 1, average response 5.35s)",
+    "D-0062 designed a Starter-plan persistent-disk architecture for durable pilot staging data, remaining the preferred future design; D-0063 defers its implementation and keeps quizmaster-staging on the Render Free plan for now, with no recurring cost authorized",
+    "Sprint 8 Task 2 is accepted: Windows host, Microsoft Edge, Google Chrome, iPhone, and Safari all passed real-device/browser acceptance against public staging; Android remains an explicitly documented not-available gap under the task's own 'where available' scope",
+    "D-0064 re-scopes Sprint 8 Task 1: the primary hosted v0.1.0 release gate narrows to live transactional password-reset email delivery (Task 1a, still blocked, not yet tested); exact dealership Wi-Fi/client-isolation/firewall behavior becomes a separate, non-blocking local fallback-mode acceptance item (Task 1b, not tested, not accepted)"
   ],
   "sprints": [
     {
@@ -590,14 +600,16 @@
         {
           "id": "s8-t1",
           "number": 1,
-          "title": "Test Network and Reset Email",
-          "status": "blocked"
+          "title": "Validate Hosted Transactional Password-Reset Email Delivery (re-scoped, D-0064)",
+          "status": "blocked",
+          "note": "Re-scoped 2026-08-20 (D-0064): the original bundled requirement (exact dealership network, outbound reset-email connectivity, client isolation) is split. Task 1a (primary release gate, BLOCKED, not yet tested): a real password-reset request must be delivered by the configured transactional email provider to a real inbox from public staging; the D-0048 identical-public-response guarantee must be unchanged; the reset link must use the public APP_BASE_URL; the link must successfully change the password; the token must be single-use; expiry must remain correct; the token/secret must never appear in server logs. RESEND_API_KEY and RESEND_FROM_EMAIL are both optional (confirmed against src/server/app.ts, resend-email-service.ts, development-email-service.ts); when either is unset, DevelopmentEmailService writes to data/dev-emails/ instead. No accepted evidence shows real delivery to a real inbox — automated tests use a mocked Resend client and dev-email files are not delivery evidence. This sub-item alone blocks v0.1.0. Task 1b (local fallback-network acceptance, NON-BLOCKING, NOT TESTED / NOT ACCEPTED): exact dealership Wi-Fi, client isolation, firewall restrictions, and local-mode recovery remain relevant only for local fallback mode (D-0002, retained by D-0061) and do not block v0.1.0. No Android or dealership-network compatibility is claimed. See Decision Log D-0064 and the Sprint Master Checklist's 'Task 1 re-scope (D-0064)' for full detail."
         },
         {
           "id": "s8-t2",
           "number": 2,
           "title": "Test Multiple Devices",
-          "status": "testing"
+          "status": "done",
+          "note": "Accepted 2026-08-20. PASS: Windows host, Microsoft Edge (host browser), Google Chrome (player browser), iPhone, and Safari — all verified against the public Render staging URL (Cloud Deployment Foundation Task 5's accepted retest plus a 2026-08-20 Edge/Chrome manual smoke test: Edge host login, Host Dashboard, game creation, and join URL display; Chrome player authentication, join, and answer submission; both browsers reaching final state with agreeing score/rank). NOT AVAILABLE / NOT TESTED: Android — no device is available to the project owner; the task's own 'where available' wording means this does not block acceptance, and Android remains a future compatibility check for whenever a device becomes available. Same-Wi-Fi local-network testing remains Task 1's fallback-validation scope, not this task's. See the Sprint Master Checklist's Task 2 device/browser acceptance for full evidence."
         },
         {
           "id": "s8-t3",
@@ -651,13 +663,62 @@
           "id": "s8-t11",
           "number": 11,
           "title": "Assign Version",
-          "status": "current"
+          "status": "blocked",
+          "note": "Still blocked, not immediately actionable: Cloud Deployment Foundation's staging acceptance (D-0061) is now complete and is no longer a blocker, and Sprint 8 Task 2's device/browser acceptance is now complete and is not a blocker either, but Sprint 8 Task 1a (hosted transactional password-reset email delivery, re-scoped under D-0064) remains an outstanding, unpassed release check, so not all release checks have passed and v0.1.0 must not be assigned or tagged yet. Task 1b (local fallback-network acceptance) does not block Task 11. Reconsider only after Task 1a passes or is explicitly dispositioned by the project owner under the project's release governance."
         },
         {
           "id": "s8-t12",
           "number": 12,
           "title": "Rehearse Host and Player Flows",
-          "status": "not-started"
+          "status": "blocked",
+          "note": "Unfinished release gate, not deferred future work: blocked pending the other outstanding Sprint 8 release checks (Task 1a hosted transactional email delivery, re-scoped under D-0064; Task 11 version assignment); rehearsal has not started. Task 2 is no longer an outstanding dependency; it was accepted 2026-08-20."
+        }
+      ]
+    },
+    {
+      "id": "sprint-cloud-foundation",
+      "number": 8.5,
+      "title": "Cloud Deployment Foundation",
+      "goal": "Make QuizMaster safely deployable to a public HTTPS staging URL while preserving local Wi-Fi hosting as a supported fallback (D-0061)",
+      "status": "in-progress",
+      "tasks": [
+        {
+          "id": "cf-t1",
+          "number": 1,
+          "title": "Make Public Join URLs Authoritative",
+          "status": "done"
+        },
+        {
+          "id": "cf-t2",
+          "number": 2,
+          "title": "Configure HTTPS-Aware Session Cookies",
+          "status": "done"
+        },
+        {
+          "id": "cf-t3",
+          "number": 3,
+          "title": "Add Render Staging Configuration",
+          "status": "done"
+        },
+        {
+          "id": "cf-t4",
+          "number": 4,
+          "title": "Document The Architecture Decision",
+          "status": "done"
+        },
+        {
+          "id": "cf-t5",
+          "number": 5,
+          "title": "Deploy And Verify Public Staging Environment",
+          "status": "done",
+          "note": "Accepted by the project owner after a real-device retest at deployed commit d211760c2a3a709ce16aa490343007496e43cfef: public HTTPS deployment, health endpoint, host authentication, public QR/join URL, player authentication/join, cellular-only gameplay (5G, Wi-Fi disabled), real-time host/player synchronization, question-image rendering and reconnect restoration on the phone, and matching host/player final results (324 points, 3 of 5 correct, rank #1 of 1, average response 5.35s) all passed."
+        },
+        {
+          "id": "cf-t6",
+          "number": 6,
+          "title": "Implement Durable Cloud Persistence (deferred, D-0063)",
+          "status": "current",
+          "note": "Research recommended keeping SQLite and attaching a Render persistent disk for the current pilot stage (no PostgreSQL/Valkey/Redis/object storage yet). Task 6a (D-0062) designed that: a Starter plan plus a persistent disk (quizmaster-data) mounted at /opt/render/project/src/data covering ./data/ (database, avatar uploads, backups), DATABASE_PATH unchanged. The project owner has deferred implementing this (D-0063): render.yaml is back to plan: free with no disk block; no Starter-plan upgrade, disk creation, or recurring Render cost is authorized now. D-0062's design remains the preferred architecture for whenever paid persistence is activated. Task 6 remains open, not done, and not being actively implemented while this deferral stands; it will require a real Render restart-acceptance test after project-owner approval to resume (host authentication, an existing player account, imported questions, completed game history, an uploaded avatar, backup files, and the health check all surviving a deliberate restart)."
         }
       ]
     },
@@ -778,8 +839,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 601,
-    "commitSha": "ba4a3bb",
-    "updatedAt": "2026-08-15T19:53:45Z"
+    "testCount": 624,
+    "commitSha": "54e5f63",
+    "updatedAt": "2026-08-20T23:49:58Z"
   }
 }
