@@ -8,15 +8,15 @@
     "deployment": "Web-hosted public HTTPS staging (accepted, D-0061); render.yaml is back to the Free plan with no persistent disk (D-0063 defers Task 6a/D-0062's Starter-plan-plus-disk design); local Wi-Fi retained as a supported fallback and development mode"
   },
   "currentTask": {
-    "sprintId": "sprint-cloud-foundation",
-    "taskId": "cf-t6",
-    "label": "Cloud Deployment Foundation · Task 6",
-    "title": "Implement Durable Cloud Persistence (deferred)",
-    "summary": "Task 6 research recommended keeping SQLite and attaching a Render persistent disk for the current pilot stage rather than migrating to PostgreSQL now. Task 6a designed that (D-0062): render.yaml briefly specified the Starter plan and a persistent disk (quizmaster-data, mounted at /opt/render/project/src/data, 1 GB) covering the existing ./data/ directory. The project owner has since deferred implementation (D-0063): render.yaml is back to plan: free with no disk block, and no Starter-plan upgrade, disk creation, or recurring Render cost is authorized. D-0062's design remains the preferred pilot-stage architecture for whenever paid persistence is activated, but Task 6 is not being actively implemented while this deferral stands. Task 6 remains open (not done, not deployed) pending explicit project-owner approval to resume, followed eventually by a real Render restart-acceptance test (host authentication, an existing player account, imported questions, completed game history, an uploaded avatar, backup files, and the health check all surviving a deliberate restart)."
+    "sprintId": "sprint-8",
+    "taskId": "s8-t1",
+    "label": "Sprint 8 · Task 1",
+    "title": "Validate Hosted Transactional Password-Reset Email Delivery",
+    "summary": "D-0064 narrowed the primary hosted v0.1.0 release gate to Task 1a: live transactional password-reset email delivery from the public application. No accepted real-inbox delivery evidence exists yet — automated tests use a mocked Resend client and DevelopmentEmailService's data/dev-emails/ output is a local stand-in, not delivery proof. Task 1a remains BLOCKED / incomplete pending that live acceptance test. Task 1b (local fallback-network acceptance: exact dealership Wi-Fi, client isolation, firewall behavior) remains NOT TESTED / NOT ACCEPTED and is explicitly non-blocking for the primary hosted v0.1.0 release. This status reflects the current release-critical focus, not that the task's own lifecycle state is anything other than blocked."
   },
   "nextMilestone": {
-    "title": "Project-owner approval to resume Task 6a",
-    "summary": "Task 6 stays deferred (D-0063) until the project owner approves resuming paid durable persistence — triggered by a real dealership pilot being scheduled, staging data loss becoming operationally unacceptable, staging holding valuable non-reconstructable data, or commercial/pre-production readiness requiring durability. Only after that approval should render.yaml be changed back to the Starter plan with a disk, deployed, and then deliberately restart-tested (host authentication, an existing player account, imported questions, completed game history, an uploaded avatar, and backup files all surviving, plus the health check passing). Free staging remains usable for continued development and testing in the meantime."
+    "title": "Pass hosted password-reset email acceptance",
+    "summary": "On public staging, with a real transactional email provider configured: initiate Forgot Password from the public hosted application; confirm the privacy-safe public response is unchanged (D-0048); confirm the email actually reaches a real inbox; confirm the reset link uses the public APP_BASE_URL; confirm the link successfully resets the password; confirm the reset token is single-use; confirm expiry behavior remains correct; confirm the reset token/secret never appears in server logs. None of this has been performed yet — configuration and testing require separate project-owner authorization (D-0064)."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -50,7 +50,8 @@
     "Host and player final results matched exactly on staging (324 points, 3 of 5 correct, rank #1 of 1, average response 5.35s)",
     "D-0062 designed a Starter-plan persistent-disk architecture for durable pilot staging data, remaining the preferred future design; D-0063 defers its implementation and keeps quizmaster-staging on the Render Free plan for now, with no recurring cost authorized",
     "Sprint 8 Task 2 is accepted: Windows host, Microsoft Edge, Google Chrome, iPhone, and Safari all passed real-device/browser acceptance against public staging; Android remains an explicitly documented not-available gap under the task's own 'where available' scope",
-    "D-0064 re-scopes Sprint 8 Task 1: the primary hosted v0.1.0 release gate narrows to live transactional password-reset email delivery (Task 1a, still blocked, not yet tested); exact dealership Wi-Fi/client-isolation/firewall behavior becomes a separate, non-blocking local fallback-mode acceptance item (Task 1b, not tested, not accepted)"
+    "D-0064 re-scopes Sprint 8 Task 1: the primary hosted v0.1.0 release gate narrows to live transactional password-reset email delivery (Task 1a, still blocked, not yet tested); exact dealership Wi-Fi/client-isolation/firewall behavior becomes a separate, non-blocking local fallback-mode acceptance item (Task 1b, not tested, not accepted)",
+    "Progress tooling now separates the dashboard's current-focus pointer from literal task lifecycle status: the current release-critical focus can be a blocked task (Sprint 8 Task 1) without misrepresenting its own status, and Cloud Deployment Foundation Task 6 is correctly marked deferred rather than current"
   ],
   "sprints": [
     {
@@ -717,7 +718,7 @@
           "id": "cf-t6",
           "number": 6,
           "title": "Implement Durable Cloud Persistence (deferred, D-0063)",
-          "status": "current",
+          "status": "deferred",
           "note": "Research recommended keeping SQLite and attaching a Render persistent disk for the current pilot stage (no PostgreSQL/Valkey/Redis/object storage yet). Task 6a (D-0062) designed that: a Starter plan plus a persistent disk (quizmaster-data) mounted at /opt/render/project/src/data covering ./data/ (database, avatar uploads, backups), DATABASE_PATH unchanged. The project owner has deferred implementing this (D-0063): render.yaml is back to plan: free with no disk block; no Starter-plan upgrade, disk creation, or recurring Render cost is authorized now. D-0062's design remains the preferred architecture for whenever paid persistence is activated. Task 6 remains open, not done, and not being actively implemented while this deferral stands; it will require a real Render restart-acceptance test after project-owner approval to resume (host authentication, an existing player account, imported questions, completed game history, an uploaded avatar, backup files, and the health check all surviving a deliberate restart)."
         }
       ]
@@ -839,8 +840,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 624,
-    "commitSha": "54e5f63",
-    "updatedAt": "2026-08-21T15:45:03Z"
+    "testCount": 627,
+    "commitSha": "2c241d5",
+    "updatedAt": "2026-08-21T15:47:46Z"
   }
 }
