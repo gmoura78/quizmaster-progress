@@ -7,10 +7,16 @@
     "capacity": "Up to 25 players",
     "deployment": "Web-hosted public HTTPS staging (accepted, D-0061); render.yaml is back to the Free plan with no persistent disk (D-0063 defers Task 6a/D-0062's Starter-plan-plus-disk design); local Wi-Fi retained as a supported fallback and development mode"
   },
-  "currentTask": null,
+  "currentTask": {
+    "sprintId": "sprint-8",
+    "taskId": "s8-t11",
+    "label": "Sprint 8 · Task 11",
+    "title": "Assign Version",
+    "summary": "D-0064's Task 1a (hosted transactional password-reset email delivery) passed live acceptance on 2026-08-22 against public staging, so Sprint 8 Tasks 1 through 10 are now complete. Task 11 (Assign Version) is the current release-governance focus: package metadata already reads 0.1.0, but no v0.1.0 git tag or release has been created yet. Task 1b (local fallback-network acceptance: exact dealership Wi-Fi, client isolation, firewall behavior) remains NOT TESTED / NOT ACCEPTED and stays non-blocking under D-0064."
+  },
   "nextMilestone": {
-    "title": "Select Next Authorized Project Work",
-    "summary": "Sprint 8 and the v0.1.0 final rehearsal are complete. No roadmap task is currently active. Cloud Deployment Foundation Task 6 remains deferred under D-0063 and Sprint 9 remains not started; project-owner authorization is required before either is resumed or started."
+    "title": "Assign v0.1.0 MVP",
+    "summary": "Verify Task 11's version/release acceptance criteria — all release-blocking checks passed, package metadata correct, working tree clean — before creating any git tag or release. No tag or release exists yet; assigning one requires separate project-owner authorization."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -34,7 +40,7 @@
     "The Windows launcher starts QuizMaster and opens the Host Dashboard",
     "The recovery runbook covers restart, rejoin, restore, email outage, fallback-router use, and blocked Wi-Fi escalation",
     "The Windows release backup was created and manually verified: 354 manifest-checked files, required source, database, and test payloads present, and .env plus node_modules absent",
-    "Release preparation was committed at 2d707bc: build, typecheck, the 600-test suite, and progress validation passed; at that time the v0.1.0 tag was intentionally still pending home phone acceptance",
+    "Release preparation is committed at 2d707bc: build, typecheck, the 600-test suite, and progress validation passed; the v0.1.0 tag remains intentionally pending home phone acceptance",
     "D-0061 approves web-hosted deployment as QuizMaster's primary deployment model, with local Wi-Fi hosting retained as a supported fallback",
     "Game join URLs and QR codes now use a public APP_BASE_URL when it is set, and fall back to the detected LAN IPv4 address for local hosting",
     "Host and player session cookies are marked Secure automatically when APP_BASE_URL is a public HTTPS URL, with local HTTP behavior unchanged",
@@ -46,9 +52,7 @@
     "Sprint 8 Task 2 is accepted: Windows host, Microsoft Edge, Google Chrome, iPhone, and Safari all passed real-device/browser acceptance against public staging; Android remains an explicitly documented not-available gap under the task's own 'where available' scope",
     "D-0064 re-scopes Sprint 8 Task 1: the primary hosted v0.1.0 release gate narrows to live transactional password-reset email delivery (Task 1a); exact dealership Wi-Fi/client-isolation/firewall behavior becomes a separate, non-blocking local fallback-mode acceptance item (Task 1b, still not tested, not accepted)",
     "Progress tooling now separates the dashboard's current-focus pointer from literal task lifecycle status: the current release-critical focus can be a blocked task without misrepresenting its own status, and Cloud Deployment Foundation Task 6 is correctly marked deferred rather than current",
-    "D-0064 Task 1a is accepted (2026-08-22): a real password-reset request on public staging was delivered by the configured Resend transactional provider to a real inbox, preserved the D-0048 privacy-safe generic response, used the public APP_BASE_URL reset link, successfully changed the password, rejected the consumed token on reuse, rejected an unused token after its 15-minute lifetime, and observed correct 3-per-60-minute rate limiting; reviewed server logs contained no reset token, API key, or password. Sprint 8 Tasks 1 through 10 were complete at that point; Task 1b remains untested and non-blocking.",
-    "Sprint 8 Task 11 (Assign Version) is accepted (2026-08-22): an annotated v0.1.0 Git tag (\"QuizMaster v0.1.0 MVP\") was created and pushed to origin, peeling to release commit 8da9e1be1258d87be4a3f71592a14eb73ffbd46b, with main aligned at that commit before tagging; no GitHub Release was created.",
-    "Sprint 8 Task 12 (Rehearse Host and Player Flows) is accepted (2026-08-22): the project owner's complete host and first-time-player rehearsal against the hosted v0.1.0 application path passed every check, with no errors observed. Sprint 8 is now complete (Tasks 1-12). No roadmap task is currently active; Task 1b, Android compatibility, paid Render persistence (cf-t6), and Sprint 9 remain outstanding/deferred as previously documented, and none was started or resumed by this acceptance."
+    "D-0064 Task 1a is accepted (2026-08-22): a real password-reset request on public staging was delivered by the configured Resend transactional provider to a real inbox, preserved the D-0048 privacy-safe generic response, used the public APP_BASE_URL reset link, successfully changed the password, rejected the consumed token on reuse, rejected an unused token after its 15-minute lifetime, and observed correct 3-per-60-minute rate limiting; reviewed server logs contained no reset token, API key, or password. Sprint 8 Tasks 1 through 10 are now complete; Task 11 (Assign Version) is the current focus. Task 1b remains untested and non-blocking."
   ],
   "sprints": [
     {
@@ -593,7 +597,7 @@
       "number": 8,
       "title": "Testing, Polish, and Rehearsal",
       "goal": "MVP packaged and ready for live use",
-      "status": "done",
+      "status": "in-progress",
       "tasks": [
         {
           "id": "s8-t1",
@@ -661,15 +665,15 @@
           "id": "s8-t11",
           "number": 11,
           "title": "Assign Version",
-          "status": "done",
-          "note": "Accepted 2026-08-22. package.json metadata already consistently read version 0.1.0. An annotated Git tag v0.1.0 (message: \"QuizMaster v0.1.0 MVP\") was created and pushed to origin, peeling to release commit 8da9e1be1258d87be4a3f71592a14eb73ffbd46b. main and the feature/cloud-deployment-foundation branch were aligned at that commit before tagging. No GitHub Release was created. Task 11 is complete."
+          "status": "current",
+          "note": "Now the current release-governance focus: Cloud Deployment Foundation's staging acceptance (D-0061) is complete, Sprint 8 Task 2's device/browser acceptance is complete, and Sprint 8 Task 1a (hosted transactional password-reset email delivery, re-scoped under D-0064) passed live acceptance on 2026-08-22. Task 1b (local fallback-network acceptance) remains non-blocking under D-0064. package.json already reads version 0.1.0, but no v0.1.0 git tag or GitHub release has been created yet. Actually assigning/tagging the release is not part of this documentation checkpoint and requires subsequent project-owner authorization and review."
         },
         {
           "id": "s8-t12",
           "number": 12,
           "title": "Rehearse Host and Player Flows",
-          "status": "done",
-          "note": "Accepted 2026-08-22. The project owner performed the complete host and first-time-player rehearsal against the hosted v0.1.0 application path. All checks passed: host login/dashboard, game creation/public HTTPS join URL, first-time player registration using a new account, player join/waiting room, complete game flow, image-question flow, matching host/player final results, and both post-game host and post-game player/account flows. No errors were observed. Task 12 is complete; Sprint 8 is complete."
+          "status": "blocked",
+          "note": "Unfinished release gate, not deferred future work: blocked pending Task 11 (version assignment); rehearsal has not started. Task 1a (hosted transactional email delivery, re-scoped under D-0064) is no longer an outstanding dependency; it was accepted 2026-08-22. Task 2 is also no longer an outstanding dependency; it was accepted 2026-08-20."
         }
       ]
     },
@@ -837,8 +841,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 632,
-    "commitSha": "14564c8",
-    "updatedAt": "2026-08-22T17:32:08Z"
+    "testCount": 628,
+    "commitSha": "8da9e1b",
+    "updatedAt": "2026-08-22T18:03:58Z"
   }
 }
