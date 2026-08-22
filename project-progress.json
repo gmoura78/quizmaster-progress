@@ -9,14 +9,14 @@
   },
   "currentTask": {
     "sprintId": "sprint-8",
-    "taskId": "s8-t1",
-    "label": "Sprint 8 · Task 1",
-    "title": "Validate Hosted Transactional Password-Reset Email Delivery",
-    "summary": "D-0064 narrowed the primary hosted v0.1.0 release gate to Task 1a: live transactional password-reset email delivery from the public application. No accepted real-inbox delivery evidence exists yet — automated tests use a mocked Resend client and DevelopmentEmailService's data/dev-emails/ output is a local stand-in, not delivery proof. Task 1a remains BLOCKED / incomplete pending that live acceptance test. Task 1b (local fallback-network acceptance: exact dealership Wi-Fi, client isolation, firewall behavior) remains NOT TESTED / NOT ACCEPTED and is explicitly non-blocking for the primary hosted v0.1.0 release. This status reflects the current release-critical focus, not that the task's own lifecycle state is anything other than blocked."
+    "taskId": "s8-t11",
+    "label": "Sprint 8 · Task 11",
+    "title": "Assign Version",
+    "summary": "D-0064's Task 1a (hosted transactional password-reset email delivery) passed live acceptance on 2026-08-22 against public staging, so Sprint 8 Tasks 1 through 10 are now complete. Task 11 (Assign Version) is the current release-governance focus: package metadata already reads 0.1.0, but no v0.1.0 git tag or release has been created yet. Task 1b (local fallback-network acceptance: exact dealership Wi-Fi, client isolation, firewall behavior) remains NOT TESTED / NOT ACCEPTED and stays non-blocking under D-0064."
   },
   "nextMilestone": {
-    "title": "Pass hosted password-reset email acceptance",
-    "summary": "On public staging, with a real transactional email provider configured: initiate Forgot Password from the public hosted application; confirm the privacy-safe public response is unchanged (D-0048); confirm the email actually reaches a real inbox; confirm the reset link uses the public APP_BASE_URL; confirm the link successfully resets the password; confirm the reset token is single-use; confirm expiry behavior remains correct; confirm the reset token/secret never appears in server logs. None of this has been performed yet — configuration and testing require separate project-owner authorization (D-0064)."
+    "title": "Assign v0.1.0 MVP",
+    "summary": "Verify Task 11's version/release acceptance criteria — all release-blocking checks passed, package metadata correct, working tree clean — before creating any git tag or release. No tag or release exists yet; assigning one requires separate project-owner authorization."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -50,8 +50,9 @@
     "Host and player final results matched exactly on staging (324 points, 3 of 5 correct, rank #1 of 1, average response 5.35s)",
     "D-0062 designed a Starter-plan persistent-disk architecture for durable pilot staging data, remaining the preferred future design; D-0063 defers its implementation and keeps quizmaster-staging on the Render Free plan for now, with no recurring cost authorized",
     "Sprint 8 Task 2 is accepted: Windows host, Microsoft Edge, Google Chrome, iPhone, and Safari all passed real-device/browser acceptance against public staging; Android remains an explicitly documented not-available gap under the task's own 'where available' scope",
-    "D-0064 re-scopes Sprint 8 Task 1: the primary hosted v0.1.0 release gate narrows to live transactional password-reset email delivery (Task 1a, still blocked, not yet tested); exact dealership Wi-Fi/client-isolation/firewall behavior becomes a separate, non-blocking local fallback-mode acceptance item (Task 1b, not tested, not accepted)",
-    "Progress tooling now separates the dashboard's current-focus pointer from literal task lifecycle status: the current release-critical focus can be a blocked task (Sprint 8 Task 1) without misrepresenting its own status, and Cloud Deployment Foundation Task 6 is correctly marked deferred rather than current"
+    "D-0064 re-scopes Sprint 8 Task 1: the primary hosted v0.1.0 release gate narrows to live transactional password-reset email delivery (Task 1a); exact dealership Wi-Fi/client-isolation/firewall behavior becomes a separate, non-blocking local fallback-mode acceptance item (Task 1b, still not tested, not accepted)",
+    "Progress tooling now separates the dashboard's current-focus pointer from literal task lifecycle status: the current release-critical focus can be a blocked task without misrepresenting its own status, and Cloud Deployment Foundation Task 6 is correctly marked deferred rather than current",
+    "D-0064 Task 1a is accepted (2026-08-22): a real password-reset request on public staging was delivered by the configured Resend transactional provider to a real inbox, preserved the D-0048 privacy-safe generic response, used the public APP_BASE_URL reset link, successfully changed the password, rejected the consumed token on reuse, rejected an unused token after its 15-minute lifetime, and observed correct 3-per-60-minute rate limiting; reviewed server logs contained no reset token, API key, or password. Sprint 8 Tasks 1 through 10 are now complete; Task 11 (Assign Version) is the current focus. Task 1b remains untested and non-blocking."
   ],
   "sprints": [
     {
@@ -602,8 +603,8 @@
           "id": "s8-t1",
           "number": 1,
           "title": "Validate Hosted Transactional Password-Reset Email Delivery (re-scoped, D-0064)",
-          "status": "blocked",
-          "note": "Re-scoped 2026-08-20 (D-0064): the original bundled requirement (exact dealership network, outbound reset-email connectivity, client isolation) is split. Task 1a (primary release gate, BLOCKED, not yet tested): a real password-reset request must be delivered by the configured transactional email provider to a real inbox from public staging; the D-0048 identical-public-response guarantee must be unchanged; the reset link must use the public APP_BASE_URL; the link must successfully change the password; the token must be single-use; expiry must remain correct; the token/secret must never appear in server logs. RESEND_API_KEY and RESEND_FROM_EMAIL are both optional (confirmed against src/server/app.ts, resend-email-service.ts, development-email-service.ts); when either is unset, DevelopmentEmailService writes to data/dev-emails/ instead. No accepted evidence shows real delivery to a real inbox — automated tests use a mocked Resend client and dev-email files are not delivery evidence. This sub-item alone blocks v0.1.0. Task 1b (local fallback-network acceptance, NON-BLOCKING, NOT TESTED / NOT ACCEPTED): exact dealership Wi-Fi, client isolation, firewall restrictions, and local-mode recovery remain relevant only for local fallback mode (D-0002, retained by D-0061) and do not block v0.1.0. No Android or dealership-network compatibility is claimed. See Decision Log D-0064 and the Sprint Master Checklist's 'Task 1 re-scope (D-0064)' for full detail."
+          "status": "done",
+          "note": "Re-scoped 2026-08-20 (D-0064): the original bundled requirement (exact dealership network, outbound reset-email connectivity, client isolation) is split. Task 1a (primary release gate) is ACCEPTED 2026-08-22: on public staging, a real password-reset request was delivered by the configured Resend transactional provider to a real inbox; the D-0048 identical-public-response guarantee held unchanged; the reset link used the public APP_BASE_URL; the link successfully changed the password and the new password logged in; the token was rejected as single-use on reuse; an unused token left roughly 18 minutes against the 15-minute lifetime was rejected as expired; 3-per-60-minute rate limiting behaved correctly and preserved the same generic response without sending another email; reviewed Render logs contained no RESEND_API_KEY, reset token, password, or complete reset URL. Task 1b (local fallback-network acceptance, NON-BLOCKING, NOT TESTED / NOT ACCEPTED): exact dealership Wi-Fi, client isolation, firewall restrictions, and local-mode recovery remain relevant only for local fallback mode (D-0002, retained by D-0061) and do not block v0.1.0. No Android or dealership-network compatibility is claimed. Acceptance used Resend's temporary testing sender configuration; final branded sender-domain configuration is future production/branding hardening, not an outstanding Task 1a release gate. See Decision Log D-0064 and the Sprint Master Checklist's Task 1 acceptance record for full detail."
         },
         {
           "id": "s8-t2",
@@ -664,15 +665,15 @@
           "id": "s8-t11",
           "number": 11,
           "title": "Assign Version",
-          "status": "blocked",
-          "note": "Still blocked, not immediately actionable: Cloud Deployment Foundation's staging acceptance (D-0061) is now complete and is no longer a blocker, and Sprint 8 Task 2's device/browser acceptance is now complete and is not a blocker either, but Sprint 8 Task 1a (hosted transactional password-reset email delivery, re-scoped under D-0064) remains an outstanding, unpassed release check, so not all release checks have passed and v0.1.0 must not be assigned or tagged yet. Task 1b (local fallback-network acceptance) does not block Task 11. Reconsider only after Task 1a passes or is explicitly dispositioned by the project owner under the project's release governance."
+          "status": "current",
+          "note": "Now the current release-governance focus: Cloud Deployment Foundation's staging acceptance (D-0061) is complete, Sprint 8 Task 2's device/browser acceptance is complete, and Sprint 8 Task 1a (hosted transactional password-reset email delivery, re-scoped under D-0064) passed live acceptance on 2026-08-22. Task 1b (local fallback-network acceptance) remains non-blocking under D-0064. package.json already reads version 0.1.0, but no v0.1.0 git tag or GitHub release has been created yet. Actually assigning/tagging the release is not part of this documentation checkpoint and requires subsequent project-owner authorization and review."
         },
         {
           "id": "s8-t12",
           "number": 12,
           "title": "Rehearse Host and Player Flows",
           "status": "blocked",
-          "note": "Unfinished release gate, not deferred future work: blocked pending the other outstanding Sprint 8 release checks (Task 1a hosted transactional email delivery, re-scoped under D-0064; Task 11 version assignment); rehearsal has not started. Task 2 is no longer an outstanding dependency; it was accepted 2026-08-20."
+          "note": "Unfinished release gate, not deferred future work: blocked pending Task 11 (version assignment); rehearsal has not started. Task 1a (hosted transactional email delivery, re-scoped under D-0064) is no longer an outstanding dependency; it was accepted 2026-08-22. Task 2 is also no longer an outstanding dependency; it was accepted 2026-08-20."
         }
       ]
     },
@@ -840,8 +841,8 @@
   ],
   "build": {
     "testStatus": "passed",
-    "testCount": 627,
-    "commitSha": "2c241d5",
-    "updatedAt": "2026-08-21T15:47:46Z"
+    "testCount": 628,
+    "commitSha": "8da9e1b",
+    "updatedAt": "2026-08-22T16:29:26Z"
   }
 }
