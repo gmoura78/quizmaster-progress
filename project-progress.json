@@ -9,14 +9,14 @@
   },
   "currentTask": {
     "sprintId": "sprint-8",
-    "taskId": "s8-t11",
-    "label": "Sprint 8 · Task 11",
-    "title": "Assign Version",
-    "summary": "D-0064's Task 1a (hosted transactional password-reset email delivery) passed live acceptance on 2026-08-22 against public staging, so Sprint 8 Tasks 1 through 10 are now complete. Task 11 (Assign Version) is the current release-governance focus: package metadata already reads 0.1.0, but no v0.1.0 git tag or release has been created yet. Task 1b (local fallback-network acceptance: exact dealership Wi-Fi, client isolation, firewall behavior) remains NOT TESTED / NOT ACCEPTED and stays non-blocking under D-0064."
+    "taskId": "s8-t12",
+    "label": "Sprint 8 · Task 12",
+    "title": "Rehearse Host and Player Flows",
+    "summary": "Task 11 (version assignment) is complete: an annotated v0.1.0 git tag exists on the approved release commit. Task 12 is now current — the complete host and first-time-player operating flows have not yet been rehearsed against the v0.1.0 release path. Task 1a and Task 2 are already accepted; Task 1b (local fallback-network acceptance) remains non-blocking under D-0064."
   },
   "nextMilestone": {
-    "title": "Assign v0.1.0 MVP",
-    "summary": "Verify Task 11's version/release acceptance criteria — all release-blocking checks passed, package metadata correct, working tree clean — before creating any git tag or release. No tag or release exists yet; assigning one requires separate project-owner authorization."
+    "title": "Complete v0.1.0 Final Rehearsal",
+    "summary": "Run and accept the complete host and first-time-player operating flows against the approved v0.1.0 release path before closing Sprint 8. Do not begin Sprint 9 as part of this milestone."
   },
   "highlights": [
     "First-time players can create permanent secured accounts",
@@ -52,7 +52,8 @@
     "Sprint 8 Task 2 is accepted: Windows host, Microsoft Edge, Google Chrome, iPhone, and Safari all passed real-device/browser acceptance against public staging; Android remains an explicitly documented not-available gap under the task's own 'where available' scope",
     "D-0064 re-scopes Sprint 8 Task 1: the primary hosted v0.1.0 release gate narrows to live transactional password-reset email delivery (Task 1a); exact dealership Wi-Fi/client-isolation/firewall behavior becomes a separate, non-blocking local fallback-mode acceptance item (Task 1b, still not tested, not accepted)",
     "Progress tooling now separates the dashboard's current-focus pointer from literal task lifecycle status: the current release-critical focus can be a blocked task without misrepresenting its own status, and Cloud Deployment Foundation Task 6 is correctly marked deferred rather than current",
-    "D-0064 Task 1a is accepted (2026-08-22): a real password-reset request on public staging was delivered by the configured Resend transactional provider to a real inbox, preserved the D-0048 privacy-safe generic response, used the public APP_BASE_URL reset link, successfully changed the password, rejected the consumed token on reuse, rejected an unused token after its 15-minute lifetime, and observed correct 3-per-60-minute rate limiting; reviewed server logs contained no reset token, API key, or password. Sprint 8 Tasks 1 through 10 are now complete; Task 11 (Assign Version) is the current focus. Task 1b remains untested and non-blocking."
+    "D-0064 Task 1a is accepted (2026-08-22): a real password-reset request on public staging was delivered by the configured Resend transactional provider to a real inbox, preserved the D-0048 privacy-safe generic response, used the public APP_BASE_URL reset link, successfully changed the password, rejected the consumed token on reuse, rejected an unused token after its 15-minute lifetime, and observed correct 3-per-60-minute rate limiting; reviewed server logs contained no reset token, API key, or password. Sprint 8 Tasks 1 through 10 are now complete; Task 11 (Assign Version) is the current focus. Task 1b remains untested and non-blocking.",
+    "Sprint 8 Task 11 (Assign Version) is accepted (2026-08-22): an annotated v0.1.0 Git tag (\"QuizMaster v0.1.0 MVP\") was created and pushed to origin, peeling to release commit 8da9e1be1258d87be4a3f71592a14eb73ffbd46b, with main aligned at that commit before tagging; no GitHub Release was created. Task 12 (Rehearse Host and Player Flows) is now current; Task 1b, Android compatibility, paid Render persistence (cf-t6), and Sprint 9 remain outstanding/deferred as previously documented."
   ],
   "sprints": [
     {
@@ -665,15 +666,15 @@
           "id": "s8-t11",
           "number": 11,
           "title": "Assign Version",
-          "status": "current",
-          "note": "Now the current release-governance focus: Cloud Deployment Foundation's staging acceptance (D-0061) is complete, Sprint 8 Task 2's device/browser acceptance is complete, and Sprint 8 Task 1a (hosted transactional password-reset email delivery, re-scoped under D-0064) passed live acceptance on 2026-08-22. Task 1b (local fallback-network acceptance) remains non-blocking under D-0064. package.json already reads version 0.1.0, but no v0.1.0 git tag or GitHub release has been created yet. Actually assigning/tagging the release is not part of this documentation checkpoint and requires subsequent project-owner authorization and review."
+          "status": "done",
+          "note": "Accepted 2026-08-22. package.json metadata already consistently read version 0.1.0. An annotated Git tag v0.1.0 (message: \"QuizMaster v0.1.0 MVP\") was created and pushed to origin, peeling to release commit 8da9e1be1258d87be4a3f71592a14eb73ffbd46b. main and the feature/cloud-deployment-foundation branch were aligned at that commit before tagging. No GitHub Release was created. Task 11 is complete."
         },
         {
           "id": "s8-t12",
           "number": 12,
           "title": "Rehearse Host and Player Flows",
-          "status": "blocked",
-          "note": "Unfinished release gate, not deferred future work: blocked pending Task 11 (version assignment); rehearsal has not started. Task 1a (hosted transactional email delivery, re-scoped under D-0064) is no longer an outstanding dependency; it was accepted 2026-08-22. Task 2 is also no longer an outstanding dependency; it was accepted 2026-08-20."
+          "status": "current",
+          "note": "Task 11 (version assignment) is complete: the v0.1.0 annotated tag exists on the approved release commit. Task 12 is now the current focus; the complete host and first-time-player rehearsal against the v0.1.0 release path has not yet been performed. Task 1a (hosted transactional password-reset email delivery, re-scoped under D-0064) and Task 2 (device/browser acceptance) are already accepted. Task 1b (local fallback-network acceptance) remains non-blocking under D-0064."
         }
       ]
     },
@@ -842,7 +843,7 @@
   "build": {
     "testStatus": "passed",
     "testCount": 628,
-    "commitSha": "8da9e1b",
-    "updatedAt": "2026-08-22T16:43:57Z"
+    "commitSha": "a570ed2",
+    "updatedAt": "2026-08-22T16:59:04Z"
   }
 }
