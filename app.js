@@ -208,9 +208,20 @@ function render(data) {
     data.project.deployment
   ].forEach((value) => projectTags?.append(createTag(value)));
 
-  text("current-task-label", data.currentTask.label);
-  text("current-task-title", data.currentTask.title);
-  text("current-task-summary", data.currentTask.summary);
+  if (data.currentTask) {
+    text("current-task-label", data.currentTask.label);
+    text("current-task-title", data.currentTask.title);
+    text("current-task-summary", data.currentTask.summary);
+  } else {
+    text("current-task-label", "No active task");
+    text("current-task-title", "Awaiting project-owner direction");
+    text(
+      "current-task-summary",
+      "All currently authorized release work is complete. Deferred or not-started " +
+        "roadmap work will not begin without project-owner authorization."
+    );
+  }
+
   text("next-milestone-title", data.nextMilestone.title);
   text("next-milestone-summary", data.nextMilestone.summary);
 
